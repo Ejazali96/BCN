@@ -1,0 +1,434 @@
+<section class="hero-slider">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active slide-1">
+        <div class="bg-opacity"></div>
+      </div>
+      <div class="carousel-item slide-2">
+        <div class="bg-opacity"></div>
+      </div>
+
+      <div class="carousel-item slide-3">
+        <div class="bg-opacity"></div>
+      </div>
+      <!-- Booking Forms -->
+      <div class="main_form">
+        <div class="container-fluid">
+          <div class="row fixed-width">
+            <div class="col-md-5 d-flex align-items-center">
+              <div class="form-detail ">
+                <h2>The Best Chauffeur Company</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua consectetur adipiscing elit.</p>
+
+                <div class="buttons">
+                  <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book Now
+                    </span></button>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-7 width_100">
+              <div class="booking-forms">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-home">One way</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-profile">Two-Way</button>
+                  </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- One way -->
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <div class="location-form">
+                      <!-- where from -->
+                      <div class="destination margin-top">
+                        <p>Where From?</p>
+                        <div class="map d-flex align-items-center dropdown mt-2" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_37_55)">
+                              <path
+                                d="M8 0C6.23248 0.00194106 4.53792 0.704943 3.28809 1.95477C2.03827 3.20459 1.33527 4.89915 1.33333 6.66667C1.33333 10.188 6.93333 15.022 7.56933 15.562L8 15.926L8.43066 15.562C9.06666 15.022 14.6667 10.188 14.6667 6.66667C14.6647 4.89915 13.9617 3.20459 12.7119 1.95477C11.4621 0.704943 9.76751 0.00194106 8 0ZM8 10C7.34072 10 6.69626 9.8045 6.14809 9.43823C5.59993 9.07196 5.17269 8.55136 4.9204 7.94228C4.6681 7.33319 4.60209 6.66297 4.73071 6.01637C4.85933 5.36976 5.1768 4.77582 5.64297 4.30964C6.10915 3.84347 6.70309 3.526 7.34969 3.39738C7.9963 3.26877 8.66652 3.33478 9.27561 3.58707C9.88469 3.83936 10.4053 4.2666 10.7716 4.81477C11.1378 5.36293 11.3333 6.0074 11.3333 6.66667C11.3323 7.5504 10.9807 8.39763 10.3558 9.02252C9.73096 9.64741 8.88373 9.99894 8 10Z"
+                                fill="white" />
+                              <path
+                                d="M8 8.66667C9.10457 8.66667 10 7.77124 10 6.66667C10 5.5621 9.10457 4.66667 8 4.66667C6.89543 4.66667 6 5.5621 6 6.66667C6 7.77124 6.89543 8.66667 8 8.66667Z"
+                                fill="white" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_37_55">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <input type="text" placeholder="Address, Airport, Hotel..">
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item">Barcelona Airprt to *</a></li>
+                            <li><a class="dropdown-item">Barcelona city</a></li>
+                            <li><a class="dropdown-item">Santcugat </a></li>
+                            <li><a class="dropdown-item">Sabadell </a></li>
+                            <li><a class="dropdown-item">Castelldefells</a></li>
+                            <li><a class="dropdown-item">Sitges </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- where To -->
+                      <div class="destination margin-top">
+                        <p>Where To?</p>
+                        <div class="map d-flex align-items-center dropdown mt-2" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_37_55)">
+                              <path
+                                d="M8 0C6.23248 0.00194106 4.53792 0.704943 3.28809 1.95477C2.03827 3.20459 1.33527 4.89915 1.33333 6.66667C1.33333 10.188 6.93333 15.022 7.56933 15.562L8 15.926L8.43066 15.562C9.06666 15.022 14.6667 10.188 14.6667 6.66667C14.6647 4.89915 13.9617 3.20459 12.7119 1.95477C11.4621 0.704943 9.76751 0.00194106 8 0ZM8 10C7.34072 10 6.69626 9.8045 6.14809 9.43823C5.59993 9.07196 5.17269 8.55136 4.9204 7.94228C4.6681 7.33319 4.60209 6.66297 4.73071 6.01637C4.85933 5.36976 5.1768 4.77582 5.64297 4.30964C6.10915 3.84347 6.70309 3.526 7.34969 3.39738C7.9963 3.26877 8.66652 3.33478 9.27561 3.58707C9.88469 3.83936 10.4053 4.2666 10.7716 4.81477C11.1378 5.36293 11.3333 6.0074 11.3333 6.66667C11.3323 7.5504 10.9807 8.39763 10.3558 9.02252C9.73096 9.64741 8.88373 9.99894 8 10Z"
+                                fill="white" />
+                              <path
+                                d="M8 8.66667C9.10457 8.66667 10 7.77124 10 6.66667C10 5.5621 9.10457 4.66667 8 4.66667C6.89543 4.66667 6 5.5621 6 6.66667C6 7.77124 6.89543 8.66667 8 8.66667Z"
+                                fill="white" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_37_55">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <input type="text" placeholder="Address, Airport, Hotel..">
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item">Barcelona Airprt to *</a></li>
+                            <li><a class="dropdown-item">Barcelona city</a></li>
+                            <li><a class="dropdown-item">Santcugat </a></li>
+                            <li><a class="dropdown-item">Sabadell </a></li>
+                            <li><a class="dropdown-item">Castelldefells</a></li>
+                            <li><a class="dropdown-item">Sitges </a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!--Date -->
+                      <div class="destination margin-top">
+                        <p>Date</p>
+                        <div class="map date-input mt-2">
+                          <input type="date">
+                        </div>
+                      </div>
+                      <!--Time -->
+                      <div class="destination margin-top">
+                        <p>Time</p>
+                        <div class="map date-input mt-2">
+                          <input type="time">
+                        </div>
+                      </div>
+                      <div class="buttons search">
+                        <button type="submit" class="cta-01"><span class="icon d-flex">Search
+                          </span></button>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- Two Way -->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="location-form">
+                      <!-- where from -->
+                      <div class="destination margin-top">
+                        <p>Where From?</p>
+                        <div class="map d-flex align-items-center dropdown mt-2" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_37_55)">
+                              <path
+                                d="M8 0C6.23248 0.00194106 4.53792 0.704943 3.28809 1.95477C2.03827 3.20459 1.33527 4.89915 1.33333 6.66667C1.33333 10.188 6.93333 15.022 7.56933 15.562L8 15.926L8.43066 15.562C9.06666 15.022 14.6667 10.188 14.6667 6.66667C14.6647 4.89915 13.9617 3.20459 12.7119 1.95477C11.4621 0.704943 9.76751 0.00194106 8 0ZM8 10C7.34072 10 6.69626 9.8045 6.14809 9.43823C5.59993 9.07196 5.17269 8.55136 4.9204 7.94228C4.6681 7.33319 4.60209 6.66297 4.73071 6.01637C4.85933 5.36976 5.1768 4.77582 5.64297 4.30964C6.10915 3.84347 6.70309 3.526 7.34969 3.39738C7.9963 3.26877 8.66652 3.33478 9.27561 3.58707C9.88469 3.83936 10.4053 4.2666 10.7716 4.81477C11.1378 5.36293 11.3333 6.0074 11.3333 6.66667C11.3323 7.5504 10.9807 8.39763 10.3558 9.02252C9.73096 9.64741 8.88373 9.99894 8 10Z"
+                                fill="white" />
+                              <path
+                                d="M8 8.66667C9.10457 8.66667 10 7.77124 10 6.66667C10 5.5621 9.10457 4.66667 8 4.66667C6.89543 4.66667 6 5.5621 6 6.66667C6 7.77124 6.89543 8.66667 8 8.66667Z"
+                                fill="white" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_37_55">
+                                <rect width="16" height="16" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <input type="text" placeholder="Address, Airport, Hotel..">
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item">Barcelona Airprt to *</a></li>
+                            <li><a class="dropdown-item">Barcelona city</a></li>
+                            <li><a class="dropdown-item">Santcugat </a></li>
+                            <li><a class="dropdown-item">Sabadell </a></li>
+                            <li><a class="dropdown-item">Castelldefells</a></li>
+                            <li><a class="dropdown-item">Sitges </a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <!--Date -->
+                      <div class="destination margin-top">
+                        <p>Date</p>
+                        <div class="map date-input mt-2">
+                          <input type="date">
+                        </div>
+                      </div>
+                      <!--Time -->
+                      <div class="destination margin-top">
+                        <p>Time</p>
+                        <div class="map date-input mt-2">
+                          <input type="time">
+                        </div>
+                      </div>
+                      <div class="buttons search">
+                        <button type="submit" class="cta-01"><span class="icon d-flex">Search
+                          </span></button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div>
+</section>
+
+<!-- Who Are we -->
+<section class="hire-section">
+  <div class="container-fluid">
+    <div class="inner-container">
+      <div class="row flex-revrese">
+        <div class="col-md-5">
+          <div class="vehicle-image">
+            <img src="../../assets/images/hire-car.png" alt="car" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-7 d-flex align-items-center">
+          <div class="vehicle-image-detail">
+            <h4 class="who-are">Who Are we</h4>
+            <h2>We Are A Chauffeur <br> Driven Car Hire Service</h2>
+            <p>Based in London, meeting the needs of our valued clients. Having been in the industry for
+              more than 20 years, we have established a name for our reliability and efficient service. We
+              constantly seek to provide client satisfaction as one of our main goals.We constantly seek
+              to provide client satisfaction as one of our main goals. We constantly seek to provide
+              client satisfaction as one of our main goals.</p>
+
+            <div class="buttons">
+              <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book
+                  Now </span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- Make your transport an unforgettable moment together. -->
+<section class="moments">
+  <div class="container-fluid">
+    <div class="inner-container">
+      <div class="d-flex justify-content-around align-items-center flex-wrap">
+        <h3>Make your transport an unforgettable moment together.</h3>
+        <div class="buttons">
+          <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book Now
+            </span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Why Choose Us-->
+<section class="hire-section">
+  <div class="container-fluid">
+    <div class="inner-container">
+      <div class="row">
+
+        <div class="col-md-7 d-flex align-items-center">
+          <div class="vehicle-image-detail why-chose">
+            <h4>Why Choose Us</h4>
+            <h2>Driving Excellence in <br> Car Transport</h2>
+            <p>At BCN Transport, we understand that booking local car transport services is more than just a
+              transaction; it's about convenience, reliability, and peace of mind. We take pride in being
+              your trusted partner for all your local car transportation needs.</p>
+
+            <div class="buttons">
+              <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book
+                  Now </span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="vehicle-image why-chose-img">
+            <img src="../../assets/images/why-chose-us.png" alt="car" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Our Services -->
+<section class="Our-Services">
+  <div class="title">
+    <h3>Our Services</h3>
+  </div>
+  <div class="container-fluid">
+    <div class="inner-container">
+      <div class="row">
+        <!-- Luxury Vans -->
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-image">
+              <img src="../../assets/images/mini-bus.png" class="card-img-top" alt="mini-bus">
+            </div>
+
+            <div class="card-body ">
+              <h5 class="card-title">Luxury Vans</h5>
+              <p class="card-text">Say goodbye to the stress of mass transit, and hello to the comfort and
+                simplicity of chauffeured rides with our City to City private transportation service.
+              </p>
+              <div class="buttons">
+                <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book Now
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mini Bus -->
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-image">
+              <img src="../../assets/images/luxury-bus.png" class="card-img-top" alt="luxury-bus">
+            </div>
+
+            <div class="card-body ">
+              <h5 class="card-title">Mini Bus</h5>
+              <p class="card-text">When you need a safe way to get around the city, think BCN chauffeur
+                hailing. You can book the top-quality service you know and love for immediate pickup.
+              </p>
+              <div class="buttons">
+                <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book Now
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Airport Transfer -->
+        <div class="col-md-4">
+          <div class="card border-0">
+            <div class="card-image">
+              <img src="../../assets/images/transfer.png" class="card-img-top" alt="transfer">
+            </div>
+
+            <div class="card-body ">
+              <h5 class="card-title">Airport Transfer</h5>
+              <p class="card-text">If you’ve just stepped off a plane, tired and aching from a long
+                flight, there can be no better antidote to your ailments than a BCN airport transfer
+                direct to your destination.</p>
+              <div class="buttons">
+                <button type="submit" routerLink="/booking" class="cta-01"><span class="icon d-flex">Book Now
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimonial section -->
+<section class="testi-sec">
+  <div class="inner-container">
+    <div class="title">
+      <h3>Testimonials</h3>
+    </div>
+    <!-- <owl-carousel-o [options]="customOptions">
+
+          <ng-template carouselSlide>
+              <div class="testimonial-card">
+                  <p>I recently had the pleasure of using BCN, and I must say, it exceeded my expectations in every
+                      way. As someone who frequently requires local and out-of-city car rentals, I've encountered my
+                      fair share of booking platforms, but this one stands out for several reasons.</p>
+                  <h4>JOHN DOE</h4>
+                  <h5>15/05/2023</h5>
+                  <div class="user-body">
+                      <img src="../../assets/images/user-1.png" alt="user">
+                  </div>
+              </div>
+          </ng-template>
+          <ng-template carouselSlide>
+              <div class="testimonial-card">
+                  <p>I recently had the pleasure of using BCN, and I must say, it exceeded my expectations in every
+                      way. As someone who frequently requires local and out-of-city car rentals, I've encountered my
+                      fair share of booking platforms, but this one stands out for several reasons.</p>
+                  <h4>JOHN DOE</h4>
+                  <h5>15/05/2023</h5>
+                  <div class="user-body">
+                      <img src="../../assets/images/user-1.png" alt="user">
+                  </div>
+              </div>
+          </ng-template>
+          <ng-template carouselSlide>
+              <div class="testimonial-card">
+                  <p>I recently had the pleasure of using BCN, and I must say, it exceeded my expectations in every
+                      way. As someone who frequently requires local and out-of-city car rentals, I've encountered my
+                      fair share of booking platforms, but this one stands out for several reasons.</p>
+                  <h4>JOHN DOE</h4>
+                  <h5>15/05/2023</h5>
+                  <div class="user-body">
+                      <img src="../../assets/images/user-1.png" alt="user">
+                  </div>
+              </div>
+          </ng-template>
+
+          <ng-template carouselSlide>
+              <div class="testimonial-card">
+                  <p>I recently had the pleasure of using BCN, and I must say, it exceeded my expectations in every
+                      way. As someone who frequently requires local and out-of-city car rentals, I've encountered my
+                      fair share of booking platforms, but this one stands out for several reasons.</p>
+                  <h4>JOHN DOE</h4>
+                  <h5>15/05/2023</h5>
+                  <div class="user-body">
+                      <img src="../../assets/images/user-1.png" alt="user">
+                  </div>
+              </div>
+          </ng-template>
+      </owl-carousel-o> -->
+  </div>
+
+</section>

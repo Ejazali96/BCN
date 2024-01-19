@@ -1,0 +1,355 @@
+.booking-bg {
+  background-image: url(../../../../assets/images/BOOKING-BG.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  padding: 50px 20px;
+
+}
+
+.in-city {
+  p {
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  i {
+    color: #FFF;
+  }
+}
+
+.buttons {
+  margin-top: 31px;
+}
+
+.destination {
+  margin: 10px 0;
+  width: 100%;
+
+  p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #FFF;
+    letter-spacing: 0.2px;
+  }
+}
+
+.booking-forms {
+  margin-top: 40px;
+  background: rgba(58, 58, 58, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(58, 58, 58, 0.3);
+  border-radius: 28px;
+  border: 1px solid #FFF;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 45px 19px 44px;
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    border-radius: 5px;
+    background: #010101;
+    color: white;
+  }
+
+  .nav {
+
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  li {
+    margin: 0 10px 0 0;
+    margin-left: 0;
+
+    button {
+      border-radius: 5px;
+      border: 1px solid #696969;
+      display: flex;
+      color: #696969;
+      font-size: 16px;
+      font-weight: 600;
+      width: 201px;
+      padding: 18px 44.344px 19px 45px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: #232323;
+    }
+  }
+}
+
+.date-input {
+  position: relative;
+
+  input {
+    padding-left: 25px;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    position: absolute;
+    left: -10px;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  position: absolute;
+  left: 0;
+}
+
+::ng-deep {
+  .form-select {
+    filter: brightness(50);
+  }
+}
+
+.search-btns {
+  width: 10%;
+  margin: 0 auto;
+}
+
+.car-card {
+  border-radius: 20px;
+  background: #1C1C1C;
+  height: 560px;
+  width: 456px;
+  margin-top: 40px !important;
+  margin: 0 auto;
+  transition: 0.4s;
+  overflow: hidden;
+  position: relative;
+
+  .buttons button:hover:after,
+  .buttons button:hover:before {
+    width: 100% !important;
+  }
+
+  .search {
+    button {
+      position: absolute;
+      bottom: 30px;
+      margin: 0 auto;
+      width: 83%;
+    }
+
+  }
+}
+
+.cars-body {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.car-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 44px;
+  // width: 376px;
+  // height: 211px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.car-detail {
+  margin: 35px;
+
+  h5 {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.svg-icon {
+  margin-top: 18px;
+
+  .icon {
+    p {
+      margin: 0;
+      color: white;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-left: 11px;
+    }
+  }
+}
+
+
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1199.98px) {
+  .booking-forms {
+    width: 100%;
+    padding: 20px 26px 33px 26px;
+  }
+
+  .car-card {
+    width: 100%;
+  }
+
+  .width_48 {
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  .cars-body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .title h3 {
+    font-size: 50px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991.98px) {
+  .booking-forms {
+    width: 100%;
+    padding: 20px 26px 33px 26px;
+  }
+
+  .car-card {
+    width: 100%;
+  }
+
+  .width_48 {
+    width: 48%;
+    margin: 0 auto;
+  }
+
+  .cars-body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .title h3 {
+    font-size: 50px;
+  }
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .width_48 {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .main_form {
+    height: 100%;
+  }
+
+  .form-detail {
+    display: none;
+  }
+
+  .booking-forms {
+    width: 100%;
+    padding: 20px 26px 33px 26px;
+  }
+
+  .destination {
+    width: 100%;
+    padding: 10px 0 0 20px;
+  }
+
+  .booking-forms {
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100px;
+        padding: 8px 0.344px 4px 3px;
+      }
+    }
+
+  }
+
+  .margin-top {
+    margin-top: 10px;
+  }
+
+
+
+  .title {
+    margin: 0px 0 20px;
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .testimonial-card {
+    background: #FFF6DE;
+    padding: 20px 20px;
+
+    h4 {
+      font-size: 23px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+
+  .fixed-width {
+    margin: auto;
+  }
+
+  .car-card {
+    height: 540px;
+    width: 100%;
+    margin-top: 0px !important;
+    margin: 10px 0;
+
+  }
+
+  .car-image {
+    width: 266px;
+  }
+
+  .cars-body {
+    width: 100%;
+  }
+
+  .search-btns {
+    width: 100%;
+
+    .buttons button:hover:after,
+    .buttons button:hover:before {
+      width: 100% !important;
+    }
+  }
+}

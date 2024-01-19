@@ -1,0 +1,203 @@
+@import url('../node_modules/primeng/resources/themes/lara-light-blue/theme.css');
+@import "../node_modules/primeng/resources/primeng.css";
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+/* You can add global styles to this file, and also import other style files */
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
+body{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.buttons button{
+  padding: 0 17px;
+  box-shadow: -12px 12px 50px 0px rgba(253, 198, 92, 0.30);
+  border-radius: 10px;
+  min-width: 190px;;
+  background: #EEB000;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+.buttons button:hover.cta-01 i {
+  color: white;
+  transition: all 0.6s ease;
+  z-index: 9;
+}
+.buttons button:after, .buttons button:before {
+  width: 0%;
+  height: 0%;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+}
+.buttons button:after {
+  transition: all 0.5s ease;
+  background: white;
+  color: white;
+}
+.buttons button:before {
+  transition: all 0.5s ease-out;
+  background: white;;
+
+}
+.buttons button span {
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+.buttons button.cta-01 {
+  color: white;
+  background: #EEB000;
+  font-size: 18px;
+}
+.buttons button:hover.cta-01 {
+  color: white;
+}
+
+.buttons button:hover:after, .buttons button:hover:before {
+  width: 200px;
+  background: black;
+  height: 200px;
+  border-radius: 4px;
+}
+.buttons button:hover:after {
+  transition: all 0.7s ease-in;
+}
+.buttons button:hover:before {
+  transition: all 0.5s ease-in;
+}
+.destination{
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  width: 440px;
+  padding: 12px 0 0 25px;
+  input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    &::placeholder{
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  select option[value]{
+    background-color: #3a393c;
+
+  }
+
+
+  select option[selected]{
+    background-color: #3a393c;
+  }
+  .form-select{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    &:focus{
+      box-shadow: none;
+    }
+    option{
+      color: white;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+  }
+  .dropdown-menu.show {
+    display: block;
+    width: 100%;
+    background:#3a393c;
+}
+  p{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+}
+li{
+
+  a{
+    color: white;
+    padding: 8px;
+  }
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: white;
+  background-color: black;
+}
+
+}
+.search{
+  button{
+    width: 100%;
+    height: 60px;
+  }
+
+}
+.bg-opacity{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0 0 0 / 59%)
+}
+.title{
+  margin: 80px;
+  h3{
+    margin: 0;
+    color: #010101;
+    text-align: center;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+}
+.Term-condition{
+  ul{
+    li{
+      color: #000;
+font-size: 24px;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+&::marker {
+  font-size: 11px;
+}
+    }
+    .para{
+      color: #000;
+font-size: 24px;
+font-style: normal;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+&::marker {
+  font-size: 10px;
+}
+    }
+  }
+}
+

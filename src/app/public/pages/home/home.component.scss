@@ -1,0 +1,705 @@
+.fixed-width {
+  margin: 15px 20px;
+}
+
+.slide-1 {
+  background-image: url(../../../../assets/images/slider-1.png);
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  background-image: url(../../../../assets/images/mini-bus.jpg);
+  background-repeat: no-repeat;
+}
+
+.slide-3 {
+  background-image: url(../../../../assets/images/mercedeze.jpg);
+  background-repeat: no-repeat;
+}
+
+.carousel-item {
+  height: 90vh;
+  position: relative;
+  background-repeat: no-repeat;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.main_form {
+  color: aliceblue;
+  z-index: 99999;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-detail {
+  h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+  }
+}
+
+.buttons {
+  margin-top: 31px;
+}
+
+.booking-forms {
+  /* From https://css.glass */
+  background: rgba(58, 58, 58, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(58, 58, 58, 0.3);
+  border-radius: 28px;
+  border: 1px solid #FFF;
+  width: 542px;
+  margin: 0 auto;
+  padding: 30px 45px 19px 44px;
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    border-radius: 5px;
+    background: #010101;
+    color: white;
+  }
+
+  li {
+    margin: 0 10px 0 0;
+    margin-left: 0;
+
+    button {
+      border-radius: 5px;
+      border: 1px solid #696969;
+      display: flex;
+      color: #696969;
+      font-size: 16px;
+      font-weight: 600;
+      width: 201px;
+      padding: 18px 44.344px 19px 45px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: #232323;
+    }
+  }
+}
+
+.buttons button:hover:after,
+.buttons button:hover:before {
+  width: 100% !important;
+}
+
+.margin-top {
+  margin-top: 28px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  position: absolute;
+  left: 0;
+}
+
+.date-input {
+  position: relative;
+
+  input {
+    padding-left: 25px;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    position: absolute;
+    left: -10px;
+  }
+}
+
+.inner-container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.vehicle-image {
+  position: relative;
+  margin: 64px 0;
+  position: relative;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  // height: 50rem;
+  // width: 39rem;
+  img {
+    // height: 100%;
+    // width: 100%;
+    // object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.vehicle-image-detail {
+  h4 {
+    color: #EEB000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h2 {
+    color: #010101;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 105.9%;
+  }
+
+  p {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: normal;
+    color: #52575C;
+  }
+}
+
+.moments {
+  background-image: url(../../../../assets/images/moment.png);
+  height: 300px;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    width: 45%;
+    color: #FFF;
+  }
+}
+
+.why-chose {
+  p {
+    width: 80%;
+  }
+}
+
+.why-chose-img {
+  //   width: 596px;
+  // height: 721px;
+  margin: 64px auto;
+}
+
+.Our-Services {
+  .card-title {
+    color: #010101;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    color: #52575C;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  //   .card-image{
+  //     width: 555px;
+  //     height: 480px;
+  // img{
+  //   height: 100%;
+  //   width: 100%;
+  // }
+  //   }
+}
+
+.testimonial-card {
+  border-radius: 54px;
+  background: #FFF6DE;
+  padding: 55px 40px;
+  border: 3px dashed #000;
+  text-align: center;
+  position: relative;
+  margin: 0 10px;
+
+  p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  }
+
+  h4 {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    line-height: normal;
+    margin-top: 50px;
+  }
+
+  h5 {
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 45px;
+    margin-top: 4px;
+  }
+}
+
+.user-body {
+  width: 165px;
+  background: #ffe9af;
+  border-radius: 50%;
+  height: 165px;
+  padding: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 14rem;
+  margin-top: -20px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.testi-sec {
+  ::ng-deep {
+    .owl-stage-outer {
+      padding-bottom: 10rem;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+      height: 15px;
+      width: 15px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+      background: #EEB000;
+    }
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 1199.98px) {
+  .vehicle-image {
+    margin: 30px 0;
+    height: auto;
+    width: auto;
+  }
+
+  .vehicle-image-detail {
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.9rem;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+  }
+
+  .Our-Services {
+    .card-title {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .Our-Services {
+    .card-image {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .title {
+    margin: 20px !important;
+  }
+
+  .moments {
+    h3 {
+      font-size: 43px;
+      font-weight: 600;
+      line-height: 46px;
+      width: 75%;
+    }
+
+  }
+
+  .user-body {
+    width: 135px;
+    height: 135px;
+    right: 5rem;
+  }
+
+  .form-detail {
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 14px;
+      line-height: 23.2px;
+    }
+  }
+
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  ::ng-deep {
+    .testi-sec .owl-stage-outer {
+      padding-bottom: 8rem !important;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991.98px) {
+  .main_form {
+    height: 100%;
+  }
+
+  .form-detail {
+    display: none;
+  }
+
+  .booking-forms {
+    width: 100%;
+    padding: 20px 26px 33px 26px;
+  }
+
+  .destination {
+    width: 100%;
+    padding: 10px 0 0 20px;
+  }
+
+  .booking-forms {
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100px;
+        padding: 8px 0.344px 4px 3px;
+      }
+    }
+
+  }
+
+  .margin-top {
+    margin-top: 10px;
+  }
+
+  .vehicle-image-detail {
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.9rem;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+  }
+
+  .moments {
+    height: 100%;
+    margin: 40px 0;
+    padding: 10px 0 20px;
+
+    h3 {
+      font-size: 1.92rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.2;
+      width: 100%;
+      color: #FFF;
+    }
+  }
+
+  .title {
+    margin: 0px 0 20px;
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .vehicle-image {
+    margin: 30px 0;
+    height: auto;
+    width: auto;
+  }
+
+  .Our-Services {
+    .card-image {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .width_100 {
+    width: 100%;
+  }
+
+  ::ng-deep {
+    .carousel.pointer-event {
+      display: flex;
+    }
+  }
+
+  .who-are {
+    margin-top: 10px;
+  }
+
+  .Our-Services {
+    .card-title {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .user-body {
+    width: 105px;
+    height: 105px;
+    right: 41%;
+    margin-top: -36px;
+    left: 34%;
+  }
+
+  ::ng-deep {
+    .testi-sec {
+      .owl-stage-outer {
+        padding-bottom: 4rem !important;
+      }
+    }
+
+  }
+
+  .testimonial-card {
+    background: #FFF6DE;
+    padding: 20px 20px;
+
+    h4 {
+      font-size: 23px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+
+  .fixed-width {
+    margin: auto;
+  }
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .main_form {
+    height: 100%;
+  }
+
+  .form-detail {
+    display: none;
+  }
+
+  .booking-forms {
+    width: 100%;
+    padding: 20px 26px 33px 26px;
+  }
+
+  .destination {
+    width: 100%;
+    padding: 10px 0 0 20px;
+  }
+
+  .booking-forms {
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100px;
+        padding: 8px 0.344px 4px 3px;
+      }
+    }
+
+  }
+
+  .margin-top {
+    margin-top: 10px;
+  }
+
+  .vehicle-image-detail {
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.9rem;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+  }
+
+  .moments {
+    height: 100%;
+    margin: 40px 0;
+    padding: 10px 0 20px;
+
+    h3 {
+      font-size: 1.92rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.2;
+      width: 100%;
+      color: #FFF;
+    }
+  }
+
+  .flex-revrese {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    margin: 0px 0 20px;
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .vehicle-image {
+    margin: 30px 0;
+    height: auto;
+    width: auto;
+  }
+
+  .Our-Services {
+    .card-image {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  ::ng-deep {
+    .carousel.pointer-event {
+      display: flex;
+    }
+  }
+
+  .who-are {
+    margin-top: 10px;
+  }
+
+  .Our-Services {
+    .card-title {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .user-body {
+    width: 105px;
+    height: 105px;
+    right: 41%;
+    margin-top: -36px;
+    left: 34%;
+  }
+
+  ::ng-deep {
+    .testi-sec {
+      .owl-stage-outer {
+        padding-bottom: 4rem !important;
+      }
+    }
+
+  }
+
+  .testimonial-card {
+    background: #FFF6DE;
+    padding: 20px 20px;
+
+    h4 {
+      font-size: 23px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+
+  .fixed-width {
+    margin: auto;
+  }
+}
