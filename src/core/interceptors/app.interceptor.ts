@@ -1,17 +1,13 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpRequest,
-  HttpHandler,
-  HttpEvent,
-  HttpInterceptor,
-  HttpHeaders
-} from '@angular/common/http';
+import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpHeaders, HttpContextToken } from '@angular/common/http';
 import { NEVER, Observable, catchError, finalize, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { Location } from '@angular/common';
+export const NO_LOADER = new HttpContextToken(() => false);
+
 @Injectable()
 export class AppInterceptor implements HttpInterceptor {
 
@@ -23,7 +19,10 @@ export class AppInterceptor implements HttpInterceptor {
   ) { }
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    this.ngxService.start()
+    if (request.context.get(NO_LOADER) === false) {
+      this.ngxService.start()
+    }
+
     var token = sessionStorage['token']
 
     // if (token) {
