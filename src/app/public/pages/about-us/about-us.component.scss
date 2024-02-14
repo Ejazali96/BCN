@@ -1,0 +1,104 @@
+.booking-bg{
+  background-image: url(../../../../assets/images/about-us.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 511px;
+  position: relative;
+  padding: 50px 20px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    z-index: 9;
+    position: relative;
+  }
+
+}
+.about-us{
+  width: 83%;
+  margin: 0 auto;
+  margin-top: 50px;
+    margin-bottom: 50px;
+  .para-detail{
+    margin-top: 28px;
+    h4{
+      font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+color: #000;
+margin: 0;
+    }
+    p{
+      font-size: 20px;
+font-style: normal;
+font-weight: 500;
+color: #000;
+margin-top: 6px;
+    }
+    li{
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 500;
+      color: #000;
+      margin-top: 6px;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media  (max-width: 1199.98px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991.98px) {  }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .title{
+    h3{
+      font-size: 1.6rem;
+    }
+  }
+  .about-us {
+      width: 92%;
+      margin: 0 auto;
+      margin-top: 20px;
+    .para-detail{
+      margin-top: 10px;
+      h4{
+        font-size: 1.4rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+      ul{
+        margin-left: 0.1rem !important;
+        li{
+          font-size: 1rem;
+        }
+      }
+
+    }
+  }
+  .Term-condition{
+    ul{
+      li{
+        font-size: 1.4rem;
+      }
+      .para{
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+.booking-bg{
+  height: auto;
+  h2{
+    font-size: 2rem;
+  }
+}
+}

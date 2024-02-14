@@ -19,6 +19,7 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
     ToastrModule.forRoot({
       positionClass: 'toast-top-right',
 
