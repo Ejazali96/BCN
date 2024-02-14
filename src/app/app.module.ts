@@ -25,8 +25,8 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
     }),
     BrowserAnimationsModule,
     NgxUiLoaderModule.forRoot({
-      fgsColor: '#EAFF09',
-      pbColor: '#EAFF09',
+      fgsColor: '#EEB000',
+      pbColor: '#EEB000',
       fgsType: "square-jelly-box",
     }),
   ],

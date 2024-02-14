@@ -10,6 +10,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BookingDetailComponent } from './pages/book-now/booking-detail/booking-detail.component';
 import { TermsConditionsComponent } from './shared/terms-conditions/terms-conditions.component';
 import { AutoCompleteModule } from 'primeng/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
   imports: [
     CommonModule,
     PublicRoutingModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PublicModule { }
