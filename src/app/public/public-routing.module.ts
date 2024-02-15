@@ -5,6 +5,7 @@ import { BookNowComponent } from './pages/book-now/book-now.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BookingDetailComponent } from './pages/book-now/booking-detail/booking-detail.component';
+import { BookingSuccessComponent } from './pages/booking-success/booking-success.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,8 +17,9 @@ const routes: Routes = [
       { path: 'detail', component: BookingDetailComponent },
     ]
   },
-  // { path: 'about-us', component: AboutUsComponent },
-  // { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'booking-success', component: BookingSuccessComponent },
 ];
 
 @NgModule({

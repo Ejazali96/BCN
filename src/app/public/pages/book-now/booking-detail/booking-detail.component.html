@@ -6,10 +6,10 @@
     <div class="row marging-to-100">
       <div class="col-md-6">
         <div class="van-image">
-          <h4>First Class Van</h4>
-          <p>80€/Hour <span> (EN BARCELONA CITY)</span></p>
+          <h4>{{ booking.vehicleType.name }}</h4>
+          <p>€{{ booking.vehicleType.perHourBarca }}/Hour <span> (EN BARCELONA CITY)</span></p>
           <div class="image-body">
-            <img src="../../assets/images/van-detail.png" alt="" class="img-fluid">
+            <img [src]="booking.vehicleType.image" onerror="this.src = '../../assets/images/van-detail.png'" alt="" class="img-fluid">
           </div>
           <div class="seat-detail">
             <div class="d-flex align-items-center">
@@ -24,10 +24,10 @@
                 </svg>
               </div>
               <div class="icon-detail">
-                <p>7 Seater <span> (7 Bags)</span></p>
+                <p>{{ booking.vehicleType.seats }} Seater <span> ({{ booking.vehicleType.bags }} Bags)</span></p>
               </div>
             </div>
-            <div class="d-flex align-items-center ms-4">
+            <!-- <div class="d-flex align-items-center ms-4">
               <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                   <path
@@ -41,7 +41,7 @@
               <div class="icon-detail">
                 <p>Automatic</p>
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>
@@ -73,8 +73,7 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>Josep Tarradellas Barcelona-El Prat Airport,
-                  08820 El Prat de Llobregat, Barcelona, Spain</small>
+                <small>{{ booking.pickup.placeName + ', ' + booking.pickup.address }}</small>
               </div>
             </div>
             <!-- date -->
@@ -97,7 +96,7 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>Thursday, September 29, 2023</small>
+                <small>{{ booking.start | date: 'EEEE, MMM dd, yyyy' }}</small>
               </div>
             </div>
             <!-- time -->
@@ -117,7 +116,7 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>2:00 PM</small>
+                <small>{{ booking.start | date: 'hh:mm a' }}</small>
               </div>
             </div>
           </div>
@@ -145,8 +144,7 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>Josep Tarradellas Barcelona-El Prat Airport,
-                  08820 El Prat de Llobregat, Barcelona, Spain</small>
+                <small>{{ booking.dropOff.placeName + ', ' + booking.dropOff.address }}</small>
               </div>
             </div>
             <!-- date -->
@@ -169,11 +167,11 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>Thursday, September 29, 2023</small>
+                <small>{{ booking.end | date: 'EEEE, MMM dd, yyyy' }}</small>
               </div>
             </div>
             <!-- time -->
-            <div class="d-flex line-height">
+            <!-- <div class="d-flex line-height">
               <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <g clip-path="url(#clip0_156_313)">
@@ -189,9 +187,9 @@
                 </svg>
               </div>
               <div class="detail">
-                <small>Overtime: <span>Rs.250/hr</span></small>
+                <small>{{ booking.end | date: 'hh:mm a' }}</small>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="payment-detail">
             <div class="booking-car-detail ">
@@ -199,23 +197,23 @@
             </div>
             <div class="row">
               <div class="col-md-3 width-40">
-                <h6>Rental:</h6>
-                <h6>No.of Days:</h6>
-                <h6>Fuel:</h6>
-                <h6>Overtime:</h6>
+                <h6>Price:</h6>
+                <h6>Distance:</h6>
+                <h6>Est Time:</h6>
+                <!-- <h6>Overtime:</h6> -->
                 <h6>Promo Code:</h6>
                 <h6>Total:</h6>
               </div>
               <div class="col-md-9 width-60">
-                <h6>$540 / Day</h6>
-                <h6>01</h6>
-                <h6>40/km</h6>
-                <h6>$50/Hr</h6>
+                <h6>€{{ booking.vehicleType.perKm }}/km & €{{ booking.vehicleType.perHourBarca }}/hour</h6>
+                <h6>{{ booking.distance.text }}</h6>
+                <h6>{{ booking.duration.text }}</h6>
+                <!-- <h6>$50/Hr</h6> -->
                 <h6> <input type="text" placeholder="Enter Promo Code Here" name="" id=""></h6>
-                <h6>$580 / Day</h6>
+                <h6>€{{ booking.price | number: '0.2-2' }}</h6>
               </div>
               <div class="buttons search">
-                <button type="submit" class="cta-01" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="cta-01" (click)="ConfirmBooking()">
                   <span class="icon d-flex">Confirm Booking</span>
                 </button>
               </div>

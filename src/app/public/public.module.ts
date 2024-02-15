@@ -11,8 +11,11 @@ import { BookingDetailComponent } from './pages/book-now/booking-detail/booking-
 import { TermsConditionsComponent } from './shared/terms-conditions/terms-conditions.component';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { DropdownModule } from 'primeng/dropdown';
+import { ConfirmBookingComponent } from './pages/book-now/booking-detail/confirm-booking/confirm-booking.component';
+import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
+import { InputMaskModule } from 'primeng/inputmask';
+import { BookingSuccessComponent } from './pages/booking-success/booking-success.component';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -21,14 +24,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutUsComponent,
     ContactUsComponent,
     BookingDetailComponent,
-    TermsConditionsComponent
+    TermsConditionsComponent,
+    ConfirmBookingComponent,
+    BookingSuccessComponent
   ],
   imports: [
     CommonModule,
     PublicRoutingModule,
     AutoCompleteModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DropdownModule,
+    DynamicDialogModule,
+    InputMaskModule
+  ],
+  providers: [
+    DialogService
   ]
 })
 export class PublicModule { }

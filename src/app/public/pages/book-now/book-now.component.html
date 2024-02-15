@@ -100,11 +100,12 @@
           <div class="col-md-6">
             <div class="destination margin-top">
               <p>Select Car Model</p>
-              <div class="map date-input mt-2">
-                <select class="form-select" aria-label="Default select example" formControlName="vehicleTypeId">
+              <div class="map date-input ">
+                <p-dropdown [options]="vehicleTypes" formControlName="vehicleTypeId" optionLabel="name" optionValue="id" [showClear]="false" placeholder="Select"></p-dropdown>
+                <!-- <select class="form-select" aria-label="Default select example" formControlName="vehicleTypeId">
                   <option selected disabled>Select..</option>
                   <option [value]="type.id" *ngFor="let type of vehicleTypes">{{ type.name }}</option>
-                </select>
+                </select> -->
               </div>
             </div>
           </div>

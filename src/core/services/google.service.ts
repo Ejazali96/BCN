@@ -16,4 +16,8 @@ export class GoogleService {
   GetPlaceById(id: string) {
     return this.http.get('Google/GetPlaceById?id=' + id)
   }
+
+  CalculateDistance(origin: string, destination: string) {
+    return this.http.get(`Google/CalculateDistance?origin=${origin}&destination=${destination}`)
+  }
 }

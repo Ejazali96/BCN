@@ -152,7 +152,22 @@
     }
   }
 }
+.map{
+::ng-deep{
+  .p-dropdown {
+    width: 100%;
+    background: transparent;
+    border: 0;
 
+}
+.p-dropdown:not(.p-disabled).p-focus{
+  box-shadow: none !important;
+}
+.p-dropdown .p-dropdown-label{
+  color: white;
+}
+}
+}
 .date-input {
   position: relative;
 
