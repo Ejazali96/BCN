@@ -1,7 +1,11 @@
 .fixed-width {
   margin: 15px 20px;
 }
-
+.form-detail {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 .slide-1 {
   background-image: url(../../../../assets/images/slider-1.png);
   background-repeat: no-repeat;
@@ -25,13 +29,11 @@
   min-width: 100% !important;
   background-position: center;
   background-size: cover;
-
-
 }
 
 .main_form {
   color: aliceblue;
-  z-index: 99999;
+  // z-index: 99999;
   position: relative;
   display: flex;
   justify-content: center;
@@ -51,12 +53,14 @@
     font-style: normal;
     margin-top: 14px;
     font-weight: 500;
-    line-height: 25.2px;
+    line-height: 29.2px;
   }
 }
 
 .buttons {
   margin-top: 31px;
+  display: flex;
+  justify-content: center;
 }
 
 .booking-forms {
@@ -68,13 +72,13 @@
   -webkit-backdrop-filter: blur(7.9px);
   border: 1px solid rgba(58, 58, 58, 0.3);
   border-radius: 28px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   width: 542px;
   margin: 0 auto;
   padding: 30px 45px 19px 44px;
 
   .nav-pills .nav-link.active,
-  .nav-pills .show>.nav-link {
+  .nav-pills .show > .nav-link {
     border-radius: 5px;
     background: #010101;
     color: white;
@@ -154,7 +158,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .vehicle-image-detail {
   h4 {
-    color: #EEB000;
+    color: #eeb000;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -174,7 +178,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
     margin-top: 25px;
     line-height: normal;
-    color: #52575C;
+    color: #52575c;
   }
 }
 
@@ -190,7 +194,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 700;
     line-height: 50px;
     width: 45%;
-    color: #FFF;
+    color: #fff;
   }
 }
 
@@ -216,7 +220,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   p {
-    color: #52575C;
+    color: #52575c;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -235,7 +239,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .testimonial-card {
   border-radius: 54px;
-  background: #FFF6DE;
+  background: #fff6de;
   padding: 55px 40px;
   border: 3px dashed #000;
   text-align: center;
@@ -303,11 +307,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .owl-theme .owl-dots .owl-dot.active span,
     .owl-theme .owl-dots .owl-dot:hover span {
-      background: #EEB000;
+      background: #eeb000;
     }
   }
 }
-
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 1199.98px) {
@@ -362,7 +365,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       line-height: 46px;
       width: 75%;
     }
-
   }
 
   .user-body {
@@ -396,13 +398,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 991.98px) {
-  .main_form {
-    height: 100%;
-  }
-
-  .form-detail {
-    display: none;
-  }
+  // .main_form {
+  //   height: 100%;
+  // }
 
   .booking-forms {
     width: 100%;
@@ -427,7 +425,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 8px 0.344px 4px 3px;
       }
     }
-
   }
 
   .margin-top {
@@ -462,7 +459,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       font-weight: 700;
       line-height: 1.2;
       width: 100%;
-      color: #FFF;
+      color: #fff;
     }
   }
 
@@ -529,11 +526,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding-bottom: 4rem !important;
       }
     }
-
   }
 
   .testimonial-card {
-    background: #FFF6DE;
+    background: #fff6de;
     padding: 20px 20px;
 
     h4 {
@@ -548,16 +544,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .main_form {
-    height: 100%;
-  }
-
+  // .main_form {
+  //   height: 100%;
+  // }
   .form-detail {
-    display: none;
+    max-width: 100%;
   }
 
   .booking-forms {
@@ -583,7 +576,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 8px 0.344px 4px 3px;
       }
     }
-
   }
 
   .margin-top {
@@ -618,7 +610,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       font-weight: 700;
       line-height: 1.2;
       width: 100%;
-      color: #FFF;
+      color: #fff;
     }
   }
 
@@ -685,11 +677,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding-bottom: 4rem !important;
       }
     }
-
   }
 
   .testimonial-card {
-    background: #FFF6DE;
+    background: #fff6de;
     padding: 20px 20px;
 
     h4 {
