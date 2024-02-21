@@ -16,9 +16,7 @@ export class BookingDetailComponent {
   booking: any
   constructor(
     private dialogService: DialogService,
-    private bookingService: BookingService,
     private stripeService: StripeService,
-    private router: Router
   ) {
 
   }
@@ -43,9 +41,10 @@ export class BookingDetailComponent {
         this.booking.contactNumber = res.contactNumber
         this.booking.locations = []
         this.booking.locations.push(this.booking.pickup)
-        this.booking.locations.push(this.booking.dropOff)
+        if (this.booking.isDropOff) {
+          this.booking.locations.push(this.booking.dropOff)
+        }
 
-        // localStorage['booking']
         var body = {
           url: location.origin,
           booking: this.booking

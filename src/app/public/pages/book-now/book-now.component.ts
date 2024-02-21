@@ -120,42 +120,54 @@ export class BookNowComponent {
     }
     var pickupPlace = city.places.find((x: any) => x.name == this.form.value.pickup.locality)
 
-    city = this.cities.find((x: any) => x.name == this.form.value.dropOff.city)
-    if (!city) {
-      this.toastr.error('Location out of range')
-      return
-    }
-    var dropOffPlace = city.places.find((x: any) => x.name == this.form.value.dropOff.locality)
+    var vehicleType = this.vehicleTypes.find((x: any) => x.id == this.form.value.vehicleTypeId)
+    this.form.controls['vehicleType'].setValue(vehicleType)
 
-    var pickup = this.form.value.pickup.lat + '%2C' + this.form.value.pickup.lng
-    var dropOff = this.form.value.dropOff.lat + '%2C' + this.form.value.dropOff.lng
-    this.googleService.CalculateDistance(pickup, dropOff)?.subscribe((res: any) => {
-      console.log(res)
-
-      var distance = res.rows[0].elements[0].distance
-      var duration = res.rows[0].elements[0].duration
-      var vehicleType = this.vehicleTypes.find((x: any) => x.id == this.form.value.vehicleTypeId)
-
-      if (pickupPlace && dropOffPlace) {
-        var pickupPrice = pickupPlace.prices.find((x: any) => x.vehicleTypeId == this.form.value.vehicleTypeId)?.price
-        var dropOffPrice = dropOffPlace.prices.find((x: any) => x.vehicleTypeId == this.form.value.vehicleTypeId)?.price
-        price = pickupPrice ? pickupPrice : dropOffPrice
-      } else {
-
-        price = vehicleType.perKm * (distance.value / 1000)
+    if (this.form.controls['isDropOff'].value == 'true') {
+      city = this.cities.find((x: any) => x.name == this.form.value.dropOff.city)
+      if (!city) {
+        this.toastr.error('Location out of range')
+        return
       }
+      var dropOffPlace = city.places.find((x: any) => x.name == this.form.value.dropOff.locality)
 
-      this.form.controls['distance'].setValue(distance)
-      this.form.controls['duration'].setValue(duration)
-      this.form.controls['vehicleType'].setValue(vehicleType)
+      var pickup = this.form.value.pickup.lat + '%2C' + this.form.value.pickup.lng
+      var dropOff = this.form.value.dropOff.lat + '%2C' + this.form.value.dropOff.lng
+      this.googleService.CalculateDistance(pickup, dropOff)?.subscribe((res: any) => {
+        var distance = res.rows[0].elements[0].distance
+        var duration = res.rows[0].elements[0].duration
+
+        if (pickupPlace && dropOffPlace) {
+          var pickupPrice = pickupPlace.prices.find((x: any) => x.vehicleTypeId == this.form.value.vehicleTypeId)?.price
+          var dropOffPrice = dropOffPlace.prices.find((x: any) => x.vehicleTypeId == this.form.value.vehicleTypeId)?.price
+          price = pickupPrice ? pickupPrice : dropOffPrice
+        } else {
+          price = vehicleType.perKm * (distance.value / 1000)
+        }
+
+        this.form.controls['distance'].setValue(distance)
+        this.form.controls['duration'].setValue(duration)
+        this.form.controls['price'].setValue(price)
+
+        this.form.value.end = this.form.value.start
+        this.form.value.isDropOff = true
+
+        localStorage['booking'] = JSON.stringify(this.form.value)
+        this.router.navigate(['/booking/detail'])
+      })
+    } else {
+      var hours = Math.abs((new Date(this.form.value.start) as any) - (new Date(this.form.value.end) as any)) / 36e5
+      price = vehicleType.perHourBarca * hours
+
+      this.form.controls['duration'].setValue({ text: hours * 60 + ' mins' })
       this.form.controls['price'].setValue(price)
 
-      this.form.value.end = this.form.value.end ? this.form.value.end : this.form.value.start
-      this.form.value.isDropOff = this.form.value.isDropOff == 'true'
+      this.form.value.isDropOff = false
 
       localStorage['booking'] = JSON.stringify(this.form.value)
       this.router.navigate(['/booking/detail'])
-    })
+    }
+
   }
 
   Submit() {

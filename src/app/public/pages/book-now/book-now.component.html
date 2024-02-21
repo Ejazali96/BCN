@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" *ngIf="form.value.isDropOff == 'true'">
             <!-- where To -->
             <div class="destination margin-top" formGroupName="dropOff">
               <p>Where To?</p>
@@ -81,31 +81,27 @@
           <!--Date -->
           <div class="col-md-6">
             <div class="destination margin-top">
-              <p>Date</p>
+              <p>{{ form.value.isDropOff == 'true' ? 'Date' : 'Start' }}</p>
               <div class="map date-input mt-2">
                 <input type="datetime-local" placeholder="date" formControlName="start"/>
               </div>
             </div>
           </div>
-          <!-- Time -->
-          <!-- <div class="col-md-6">
+          <!--Date -->
+          <div class="col-md-6" *ngIf="form.value.isDropOff != 'true'">
             <div class="destination margin-top">
-              <p>Time</p>
+              <p>End</p>
               <div class="map date-input mt-2">
-                <input type="time" placeholder="date" />
+                <input type="datetime-local" placeholder="date" formControlName="end"/>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- Select Car Model -->
           <div class="col-md-6">
             <div class="destination margin-top">
               <p>Select Car Model</p>
               <div class="map date-input ">
                 <p-dropdown [options]="vehicleTypes" formControlName="vehicleTypeId" optionLabel="name" optionValue="id" [showClear]="false" placeholder="Select"></p-dropdown>
-                <!-- <select class="form-select" aria-label="Default select example" formControlName="vehicleTypeId">
-                  <option selected disabled>Select..</option>
-                  <option [value]="type.id" *ngFor="let type of vehicleTypes">{{ type.name }}</option>
-                </select> -->
               </div>
             </div>
           </div>
@@ -166,11 +162,11 @@
                 </div>
 
               </div>
-              <div class="buttons search">
+              <!-- <div class="buttons search">
                 <button type="submit" routerLink="#booking" class="cta-01">
                   <span class="icon d-flex">Book Now</span>
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
