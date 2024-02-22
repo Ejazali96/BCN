@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { PaginationConfig } from 'src/core/models/pagination-config.model';
@@ -43,9 +43,9 @@ export class BookNowComponent {
       name: [''],
       contactNumber: [''],
       email: [''],
-      start: [''],
+      start: ['', [Validators.required]],
       end: [''],
-      vehicleTypeId: [''],
+      vehicleTypeId: ['', [Validators.required]],
       vehicleType: [''],
       isDropOff: ['true'],
       price: [0.0],
@@ -55,7 +55,7 @@ export class BookNowComponent {
         autocomplete: [''],
         placeId: [''],
         address: [''],
-        placeName: [''],
+        placeName: ['', [Validators.required]],
         lat: [''],
         lng: [''],
         type: ['Pickup'],
@@ -66,7 +66,7 @@ export class BookNowComponent {
         autocomplete: [''],
         placeId: [''],
         address: [''],
-        placeName: [''],
+        placeName: ['', [Validators.required]],
         lat: [''],
         lng: [''],
         type: ['DropOff'],
@@ -176,5 +176,18 @@ export class BookNowComponent {
     }
 
     this.CalculatePrice()
+  }
+
+  IsDropOffChange() {
+    debugger
+    if (this.form.controls['isDropOff'].value == 'true') {
+      (this.form.controls['dropOff'] as FormGroup).controls['placeName'].setValidators([Validators.required])
+      this.form.controls['end'].setValidators([])
+    } else {
+      (this.form.controls['dropOff'] as FormGroup).controls['placeName'].setValidators([])
+      this.form.controls['end'].setValidators([Validators.required])
+    }
+    (this.form.controls['dropOff'] as FormGroup).controls['placeName'].updateValueAndValidity()
+    this.form.controls['end'].updateValueAndValidity()
   }
 }

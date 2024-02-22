@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://arete.azurewebsites.net/api/',
+  apiUrl: 'https://bcnapi.azurewebsites.net/api/',
 };
