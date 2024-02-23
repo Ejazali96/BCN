@@ -108,7 +108,6 @@
   .search {
     width: 60%;
     margin-top: 20px;
-
   }
 
   .buttons button:hover:after,
@@ -124,19 +123,19 @@
   input {
     outline: none;
     border: none;
-    border-bottom: 1px solid #CACACA;
+    border-bottom: 1px solid #cacaca;
 
     &::placeholder {
-      color: #CACACA;
+      color: #cacaca;
     }
   }
 }
 
 .seat-detail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 90px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin-top: 60px;
 }
 
 .custom-dialouge {
@@ -291,7 +290,6 @@
     P {
       font-size: 16px;
     }
-
   }
 
   .icon-detail {

@@ -16,6 +16,7 @@ import { ConfirmBookingComponent } from './pages/book-now/booking-detail/confirm
 import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
 import { InputMaskModule } from 'primeng/inputmask';
 import { BookingSuccessComponent } from './pages/booking-success/booking-success.component';
+
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -26,7 +27,7 @@ import { BookingSuccessComponent } from './pages/booking-success/booking-success
     BookingDetailComponent,
     TermsConditionsComponent,
     ConfirmBookingComponent,
-    BookingSuccessComponent
+    BookingSuccessComponent,
   ],
   imports: [
     CommonModule,
@@ -36,10 +37,8 @@ import { BookingSuccessComponent } from './pages/booking-success/booking-success
     ReactiveFormsModule,
     DropdownModule,
     DynamicDialogModule,
-    InputMaskModule
+    InputMaskModule,
   ],
-  providers: [
-    DialogService
-  ]
+  providers: [DialogService],
 })
-export class PublicModule { }
+export class PublicModule {}
