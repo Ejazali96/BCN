@@ -6,14 +6,12 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppInterceptor } from 'src/core/interceptors/app.interceptor';
 import { ToastrModule } from 'ngx-toastr';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -22,16 +20,22 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
     ToastrModule.forRoot({
       positionClass: 'toast-top-right',
-
     }),
     BrowserAnimationsModule,
     NgxUiLoaderModule.forRoot({
       fgsColor: '#EEB000',
       pbColor: '#EEB000',
-      fgsType: "square-jelly-box",
+      fgsType: 'three-strings',
+      fgsSize: 100,
+      pbThickness: 8,
+      bgsOpacity: 0.5,
+      blur: 10,
+      // logoUrl: '../assets/images/lgog.png',
     }),
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
