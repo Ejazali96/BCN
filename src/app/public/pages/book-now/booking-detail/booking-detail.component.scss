@@ -4,7 +4,11 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
+::ng-deep {
+  .p-dialog .p-dialog-header {
+    padding: 0;
+  }
+}
 .menu-list {
   h3 {
     color: #000;
@@ -12,6 +16,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+}
+.clickable-text {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000;
+  transition: 0.4s;
+  &:hover {
+    color: #eeb000;
   }
 }
 

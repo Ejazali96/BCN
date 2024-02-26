@@ -302,17 +302,32 @@
                   <input type="checkbox" id="contact" />
                   <label for="contact"></label
                   ><span class="ms-1"
-                    >I agree to the <a> Terms of Service </a> &
-                    <a> Privacy Policy></a>
+                    >I agree to the
+                    <a class="clickable-text" (click)="showDialog()">
+                      Terms of Service
+                    </a>
+                    &
+                    <a class="clickable-text" (click)="showDialog()">
+                      Privacy Policy</a
+                    >
                   </span>
                 </div>
               </div>
               <div class="buttons search">
-                <button type="button" class="cta-01" (click)="ConfirmBooking()">
+                <button type="button" class="cta-01" (click)="showDialog()">
                   <span class="icon d-flex">Confirm Booking</span>
                 </button>
               </div>
-
+              <div class="card flex justify-content-center">
+                <p-dialog
+                  [(visible)]="visible"
+                  [modal]="true"
+                  [draggable]="false"
+                  [resizable]="false"
+                >
+                  <app-terms-conditions></app-terms-conditions>
+                </p-dialog>
+              </div>
               <!-- Modal for booking confirmation -->
               <div
                 class="modal fade"

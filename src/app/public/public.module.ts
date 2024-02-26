@@ -16,7 +16,8 @@ import { ConfirmBookingComponent } from './pages/book-now/booking-detail/confirm
 import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
 import { InputMaskModule } from 'primeng/inputmask';
 import { BookingSuccessComponent } from './pages/booking-success/booking-success.component';
-
+import { DialogModule } from 'primeng/dialog';
+import { PrivacyComponent } from './shared/privacy/privacy.component';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -28,6 +29,7 @@ import { BookingSuccessComponent } from './pages/booking-success/booking-success
     TermsConditionsComponent,
     ConfirmBookingComponent,
     BookingSuccessComponent,
+    PrivacyComponent,
   ],
   imports: [
     CommonModule,
@@ -38,6 +40,7 @@ import { BookingSuccessComponent } from './pages/booking-success/booking-success
     DropdownModule,
     DynamicDialogModule,
     InputMaskModule,
+    DialogModule,
   ],
   providers: [DialogService],
 })

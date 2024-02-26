@@ -9,52 +9,55 @@ import { StripeService } from 'src/core/services/stripe.service';
 @Component({
   selector: 'app-booking-detail',
   templateUrl: './booking-detail.component.html',
-  styleUrls: ['./booking-detail.component.scss']
+  styleUrls: ['./booking-detail.component.scss'],
 })
 export class BookingDetailComponent {
-
-  booking: any
+  booking: any;
   constructor(
     private dialogService: DialogService,
-    private stripeService: StripeService,
-  ) {
+    private stripeService: StripeService
+  ) {}
+  visible: boolean = false;
 
+  showDialog() {
+    this.visible = true;
   }
 
   ngOnInit() {
-    this.booking = JSON.parse(localStorage['booking'])
+    this.booking = JSON.parse(localStorage['booking']);
   }
 
   ConfirmBooking() {
-    this.dialogService.open(
-      ConfirmBookingComponent,
-      {
+    this.dialogService
+      .open(ConfirmBookingComponent, {
         header: 'Confirm Booking',
         width: '30vw',
         height: '50vh',
         modal: true,
-      }
-    ).onClose.subscribe((res: any) => {
-      if (res) {
-        this.booking.email = res.email
-        this.booking.name = res.name
-        this.booking.contactNumber = res.contactNumber
-        this.booking.locations = []
-        this.booking.locations.push(this.booking.pickup)
-        if (this.booking.isDropOff) {
-          this.booking.locations.push(this.booking.dropOff)
-        }
-
-        var body = {
-          url: location.origin,
-          booking: this.booking
-        }
-        this.stripeService.CreateCheckoutSession(body).subscribe((res: any) => {
-          if (res.isSuccess) {
-            location.replace(res.payload.url)
+      })
+      .onClose.subscribe((res: any) => {
+        if (res) {
+          this.booking.email = res.email;
+          this.booking.name = res.name;
+          this.booking.contactNumber = res.contactNumber;
+          this.booking.locations = [];
+          this.booking.locations.push(this.booking.pickup);
+          if (this.booking.isDropOff) {
+            this.booking.locations.push(this.booking.dropOff);
           }
-        })
-      }
-    })
+
+          var body = {
+            url: location.origin,
+            booking: this.booking,
+          };
+          this.stripeService
+            .CreateCheckoutSession(body)
+            .subscribe((res: any) => {
+              if (res.isSuccess) {
+                location.replace(res.payload.url);
+              }
+            });
+        }
+      });
   }
 }
