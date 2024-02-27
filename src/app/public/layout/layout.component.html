@@ -1,36 +1,58 @@
 <div class="header">
-
-
   <nav class="navbar">
     <div class="navbar-container container-fluid fixed-width">
-      <input type="checkbox" name="" id="">
+      <input type="checkbox" name="" id="" />
       <div class="hamburger-lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <ul class=" mx-auto mb-2 mb-lg-0 menu-items mx-auto">
-        <li class="nav-item ">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <ul class="mx-auto mb-2 mb-lg-0 menu-items mx-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/booking" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">Book Now</a>
+          <a
+            class="nav-link"
+            routerLink="/booking"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Book Now</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about-us" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">About Us</a>
+          <a
+            class="nav-link"
+            routerLink="/about-us"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >About Us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">Contact Us</a>
+          <a
+            class="nav-link"
+            routerLink="/contact-us"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Contact Us</a
+          >
         </li>
       </ul>
       <h1 class="logo">
         <div class="navbar-brand">
-          <img src="../assets/images/lgog.png" routerLink="/" alt="logo">
+          <img
+            src="../../../assets/images/Termional.png"
+            routerLink="/"
+            alt="logo"
+          />
         </div>
       </h1>
     </div>
@@ -41,69 +63,76 @@
   <router-outlet></router-outlet>
 </div>
 
-<footer class="text-center text-lg-start text-light ">
-  <section class=" foter-width">
-    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottoms">
-
+<footer class="text-center text-lg-start text-light">
+  <section class="foter-width">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-2 border-bottoms"
+    >
       <div class="me-5 mb-3 mt-3 logo-footer">
         <span class="">
-          <img src="../assets/images/footer-logo.png" routerLink="/" alt="footer-logo">
+          <img
+            src="../../../assets/images/footer-logo.png"
+            routerLink="/"
+            alt="logo"
+          />
         </span>
       </div>
-
     </section>
 
     <section class="">
       <div class="container-fluid text-center text-md-start mt-3">
         <div class="row">
-          <div class="col-md-4 col-lg-4 col-xl-4  mb-3">
-            <h6 class="footer-title mb-2">
-              About
-            </h6>
+          <div class="col-md-4 col-lg-4 col-xl-4 mb-3">
+            <h6 class="footer-title mb-2">About</h6>
             <p>
-              Welcome to BCN Transports, your trusted partner in seamless urban and intercity travel. At
-              BCN Transports, we believe in redefining the way you experience transportation. Whether
-              you're exploring the vibrant streets of the city or embarking on an adventure outside its
-              limits, we're here to make your journey memorable, convenient, and hassle-free.
-
-
+              Founded on the principles of excellence and dedication, Terminal
+              Transit has grown to become a leader in luxury airport transfer
+              services. Our mission is simple: to provide impeccable, punctual,
+              and superior transportation solutions, tailored to the needs of
+              the modern traveler. With a fleet of high-end vehicles and a team
+              of professional drivers, we guarantee a travel experience that
+              sets new standards in luxury.
             </p>
-            <h6 class="footer-title mb-2">
-              Contact
-            </h6>
-            <p class="mt-2 mb-2">
-              Taxi Hold Near Delta Airline Newyork, USA
-            </p>
+            <h6 class="footer-title mb-2">Contact</h6>
+            <p class="mt-2 mb-2">Taxi Hold Near Delta Airline Newyork, USA</p>
             <div class="social-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+              >
                 <g clip-path="url(#clip0_78_326)">
                   <path
                     d="M35.3317 16.5674C35.1964 12.437 33.4898 8.51398 30.5603 5.59907C27.471 2.5092 23.3652 0.808105 19 0.808105C10.1834 0.808105 2.97943 7.82564 2.6689 16.5674C1.98908 16.8686 1.41118 17.3604 1.00524 17.9833C0.599294 18.6062 0.382725 19.3335 0.381775 20.0771V24.3889C0.382875 25.4071 0.787838 26.3833 1.50781 27.1032C2.22778 27.8232 3.20396 28.2282 4.22215 28.2293C4.88093 28.2285 5.5125 27.9664 5.97833 27.5006C6.44416 27.0348 6.70621 26.4032 6.70699 25.7444V18.7209C6.70699 17.4343 5.72018 16.3851 4.46559 16.2604C4.92871 8.64442 11.2688 2.58936 19 2.58936C22.8902 2.58936 26.5483 4.10579 29.3016 6.85901C31.8297 9.3872 33.3094 12.6825 33.532 16.261C32.2786 16.3869 31.2936 17.4355 31.2936 18.7209V25.7438C31.2936 27.0412 32.2958 28.0969 33.5653 28.2067V29.9814C33.5642 30.9424 33.1819 31.8637 32.5023 32.5431C31.8228 33.2226 30.9014 33.6047 29.9404 33.6057H27.2561C27.0751 33.078 26.7335 32.6203 26.2791 32.2968C25.8247 31.9733 25.2804 31.8002 24.7226 31.8019H21.9557C21.5585 31.8019 21.1773 31.8862 20.8281 32.0489C20.3607 32.2648 19.9647 32.61 19.687 33.0436C19.4092 33.4773 19.2613 33.9813 19.2607 34.4963C19.2607 35.2171 19.5415 35.894 20.0503 36.4004C20.2997 36.6519 20.5966 36.8512 20.9237 36.987C21.2508 37.1228 21.6015 37.1922 21.9557 37.1913H24.7226C25.8697 37.1913 26.8808 36.4497 27.2579 35.3869H29.9404C32.9216 35.3869 35.3465 32.962 35.3465 29.9814V27.8896C36.0223 27.5868 36.5962 27.0952 36.9992 26.4739C37.4022 25.8527 37.6172 25.1282 37.6182 24.3877V20.0759C37.6182 18.5119 36.6765 17.1653 35.3317 16.5674ZM4.92515 18.7209V25.7438C4.92515 26.1315 4.60987 26.4474 4.22156 26.4474C3.67564 26.4468 3.15225 26.2296 2.76623 25.8436C2.3802 25.4576 2.16306 24.9342 2.16243 24.3883V20.0765C2.16306 19.5306 2.3802 19.0072 2.76623 18.6212C3.15225 18.2351 3.67564 18.018 4.22156 18.0174C4.60987 18.0174 4.92515 18.3332 4.92515 18.7209ZM25.6162 34.6875C25.5719 34.892 25.4591 35.0752 25.2965 35.2068C25.1339 35.3385 24.9312 35.4106 24.722 35.4113H21.9551C21.7117 35.4113 21.4831 35.3163 21.3085 35.1417C21.2235 35.0574 21.1562 34.957 21.1103 34.8464C21.0644 34.7358 21.041 34.6172 21.0413 34.4975C21.0419 34.2554 21.1384 34.0234 21.3097 33.8522C21.4809 33.6811 21.713 33.5848 21.9551 33.5843H24.722C24.9654 33.5843 25.194 33.6787 25.368 33.8533C25.5401 34.0249 25.6352 34.254 25.6352 34.4975C25.6357 34.5628 25.6286 34.6281 25.6162 34.6875ZM35.837 24.3883C35.8363 24.9342 35.6192 25.4576 35.2332 25.8436C34.8471 26.2296 34.3238 26.4468 33.7778 26.4474C33.5913 26.4473 33.4124 26.3731 33.2805 26.2412C33.1486 26.1093 33.0744 25.9304 33.0742 25.7438V18.7209C33.0742 18.3332 33.3895 18.0174 33.7778 18.0174C34.3238 18.018 34.8471 18.2351 35.2332 18.6212C35.6192 19.0072 35.8363 19.5306 35.837 20.0765V24.3883Z"
-                    fill="white" />
+                    fill="white"
+                  />
                   <path
                     d="M29.1193 17.2189C29.1193 11.6394 24.5795 7.09961 19 7.09961C13.4205 7.09961 8.88074 11.6394 8.88074 17.2189C8.88074 22.7984 13.4205 27.3382 19 27.3382C24.5795 27.3382 29.1193 22.7984 29.1193 17.2189ZM19 25.5569C14.4026 25.5569 10.662 21.8163 10.662 17.2189C10.662 12.6215 14.4026 8.88086 19 8.88086C23.5974 8.88086 27.338 12.6215 27.338 17.2189C27.338 21.8163 23.5974 25.5569 19 25.5569Z"
-                    fill="white" />
+                    fill="white"
+                  />
                   <path
                     d="M19.6668 19.1365H22.5102V20.099C22.5102 20.5455 22.8736 20.9089 23.3201 20.9089C23.7666 20.9089 24.13 20.5455 24.13 20.099V19.1365H24.206C24.6525 19.1365 25.0159 18.7732 25.0159 18.3267C25.0159 17.8802 24.6525 17.5168 24.206 17.5168H24.13V16.1209C24.13 15.6744 23.7666 15.311 23.3201 15.311C22.8736 15.311 22.5102 15.6744 22.5102 16.1209V17.5168H20.8252L21.9379 14.5148C21.9723 14.3585 21.9597 14.1955 21.9017 14.0464C21.8437 13.8973 21.7429 13.7686 21.612 13.6767C21.481 13.5847 21.3258 13.5335 21.1658 13.5295C21.0058 13.5256 20.8483 13.569 20.713 13.6544C20.5301 13.7702 20.4036 13.9513 20.3561 14.1633L18.8765 18.1503C18.8231 18.3908 18.8812 18.6396 19.035 18.8319C19.1888 19.0255 19.4192 19.1365 19.6668 19.1365ZM15.124 17.4271C14.2209 17.9199 12.9841 18.5944 12.9841 20.099C12.9841 20.5455 13.3475 20.9089 13.794 20.9089H17.3381C17.7846 20.9089 18.148 20.5455 18.148 20.099C18.148 19.6525 17.7846 19.2891 17.3381 19.2891H15.1531C15.355 19.1502 15.6079 19.0089 15.9 18.8492C16.8488 18.3314 18.148 17.6225 18.148 15.9855C18.148 14.6318 16.9896 13.5298 15.5657 13.5298C14.1419 13.5298 12.9835 14.6312 12.9835 15.9855C12.9835 16.432 13.3469 16.7954 13.7934 16.7954C14.2399 16.7954 14.6033 16.432 14.6033 15.9855C14.6033 15.5248 15.0349 15.1495 15.5657 15.1495C16.0966 15.1495 16.5282 15.5242 16.5282 15.9855C16.5282 16.5965 16.1001 16.8939 15.124 17.4271Z"
-                    fill="white" />
+                    fill="white"
+                  />
                 </g>
                 <defs>
                   <clipPath id="clip0_78_326">
                     <rect width="38" height="38" fill="white" />
                   </clipPath>
                 </defs>
-              </svg> <span> <a href="tel:+1111 0000 1111 222">1111 0000 1111 222</a> </span>
+              </svg>
+              <span>
+                <a href="tel:+1111 0000 1111 222">1111 0000 1111 222</a>
+              </span>
             </div>
-
           </div>
-
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 mt-2">
             <!-- Links -->
-            <h6 class="footer-title">
-              links
-            </h6>
+            <h6 class="footer-title">links</h6>
             <p class="quick-links" routerLink="/about-us">
               <a>About Us</a>
             </p>
@@ -125,79 +154,31 @@
             <h6 class="footer-title mb-4">Social Links</h6>
             <div class="social-icon">
               <p class="quick-links">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <g clip-path="url(#clip0_275_91)">
-                    <path
-                      d="M23.9604 22.4833H24.1969L23.7437 21.7979C24.0208 21.7979 24.1677 21.6218 24.1698 21.4062C24.1698 21.3979 24.1698 21.3885 24.1687 21.3802C24.1687 21.0864 23.9917 20.9458 23.6281 20.9458H23.0406V22.4833H23.2615V21.8135H23.5333L23.9604 22.4833ZM23.5177 21.6396H23.2615V21.1198H23.5865C23.7542 21.1198 23.9458 21.1468 23.9458 21.3666C23.9458 21.6187 23.7531 21.6396 23.5177 21.6396Z"
-                      fill="white" />
-                    <path
-                      d="M18.0115 19.8676H14.8792V14.9623C14.8792 13.7926 14.8583 12.2873 13.25 12.2873C11.6188 12.2873 11.3688 13.5613 11.3688 14.878V19.8676H8.2375V9.78006H11.2448V11.1582H11.2865C11.9 10.1103 13.0396 9.48422 14.2531 9.52902C17.4281 9.52902 18.0125 11.6176 18.0125 14.3332L18.0115 19.8676ZM4.70312 8.40089C3.69896 8.40089 2.88542 7.58735 2.88542 6.58318C2.88542 5.57902 3.69896 4.76547 4.70312 4.76547C5.70729 4.76547 6.52083 5.57902 6.52083 6.58318C6.52083 7.58735 5.70729 8.40089 4.70312 8.40089ZM6.26875 19.8676H3.13333V9.78006H6.26875V19.8676ZM19.5729 1.85714H1.55938C0.708333 1.84777 0.0104167 2.53006 0 3.3811V21.4686C0.0104167 22.3207 0.708333 23.003 1.55938 22.9936H19.5729C20.426 23.004 21.1271 22.3217 21.1385 21.4686V3.38006C21.126 2.52693 20.425 1.84464 19.5729 1.8561"
-                      fill="white" />
-                    <path
-                      d="M23.5448 20.2612C22.7489 20.2685 22.1094 20.9206 22.1177 21.7164C22.125 22.5123 22.7771 23.1519 23.5729 23.1435C24.3687 23.1362 25.0083 22.4841 25 21.6883C24.9927 20.9029 24.3573 20.2685 23.5729 20.2612H23.5448ZM23.5781 22.9779C22.8802 22.9894 22.2719 22.4341 22.2604 21.7362C22.2489 21.0383 22.8052 20.4633 23.5031 20.4519C24.201 20.4404 24.776 20.9966 24.7875 21.6946C24.7875 21.7019 24.7875 21.7081 24.7875 21.7154C24.8021 22.3977 24.2604 22.9633 23.5781 22.9779H23.5458H23.5781Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_275_91">
-                      <rect width="25" height="25" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg> <span> LinkedIn</span>
+                <i class="fa-brands fa-linkedin"></i>
+                <span> LinkedIn</span>
               </p>
             </div>
 
             <div class="social-icon">
               <p class="quick-links">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <g clip-path="url(#clip0_275_27)">
-                    <path
-                      d="M25 12.5762C25 18.8147 20.4229 23.9866 14.4479 24.9251V16.2137H17.3531L17.9062 12.6095H14.4479V10.271C14.4479 9.28451 14.9312 8.32409 16.4792 8.32409H18.051V5.25534C18.051 5.25534 16.624 5.01159 15.2604 5.01159C12.4125 5.01159 10.5521 6.73763 10.5521 9.86159V12.6085H7.38646V16.2126H10.5521V24.9241C4.57812 23.9845 0 18.8137 0 12.5762C0 5.67305 5.59687 0.0761719 12.5 0.0761719C19.4031 0.0761719 25 5.67201 25 12.5762Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_275_27">
-                      <rect width="25" height="25" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <i class="fa-brands fa-facebook"></i>
                 <span> Facebook</span>
               </p>
             </div>
 
             <div class="social-icon">
               <p class="quick-links">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <path
-                    d="M19.6875 1.20117H23.5229L15.1458 10.773L25 23.8001H17.2865L11.2406 15.9012L4.33021 23.8001H0.488542L9.44687 13.5595L0 1.20117H7.90937L13.3687 8.42096L19.6875 1.20117ZM18.3406 21.5074H20.4646L6.75208 3.37409H4.47083L18.3406 21.5074Z"
-                    fill="white" />
-                </svg> <span> Twitter</span>
+                <i class="fa-brands fa-twitter"></i>
+                <span> Twitter</span>
               </p>
             </div>
 
             <div class="social-icon">
               <p class="quick-links">
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                  <g clip-path="url(#clip0_275_45)">
-                    <path
-                      d="M12.5 2.25208C15.8375 2.25208 16.2333 2.26458 17.551 2.325C18.9135 2.3875 20.3167 2.69792 21.3094 3.69062C22.3115 4.69271 22.6125 6.08229 22.675 7.44896C22.7354 8.76667 22.7479 9.1625 22.7479 12.5C22.7479 15.8375 22.7354 16.2333 22.675 17.551C22.6135 18.9062 22.2958 20.3229 21.3094 21.3094C20.3073 22.3115 18.9188 22.6125 17.551 22.675C16.2333 22.7354 15.8375 22.7479 12.5 22.7479C9.1625 22.7479 8.76667 22.7354 7.44896 22.675C6.10417 22.6135 4.66875 22.2885 3.69062 21.3094C2.69375 20.3125 2.3875 18.9094 2.325 17.551C2.26458 16.2333 2.25208 15.8375 2.25208 12.5C2.25208 9.1625 2.26458 8.76667 2.325 7.44896C2.38646 6.09896 2.70729 4.67396 3.69062 3.69062C4.69062 2.69062 6.08542 2.3875 7.44896 2.325C8.76667 2.26458 9.1625 2.25208 12.5 2.25208ZM12.5 0C9.10521 0 8.67917 0.0145833 7.34583 0.075C5.41354 0.163542 3.49479 0.701042 2.09792 2.09792C0.695833 3.5 0.163542 5.41458 0.075 7.34583C0.0145833 8.67917 0 9.10521 0 12.5C0 15.8948 0.0145833 16.3208 0.075 17.6542C0.163542 19.5844 0.703125 21.5083 2.09792 22.9021C3.49896 24.3031 5.41667 24.8365 7.34583 24.925C8.67917 24.9854 9.10521 25 12.5 25C15.8948 25 16.3208 24.9854 17.6542 24.925C19.5854 24.8365 21.5062 24.2979 22.9021 22.9021C24.3052 21.499 24.8365 19.5854 24.925 17.6542C24.9854 16.3208 25 15.8948 25 12.5C25 9.10521 24.9854 8.67917 24.925 7.34583C24.8365 5.41354 24.2979 3.49375 22.9021 2.09792C21.5031 0.698958 19.5802 0.1625 17.6542 0.075C16.3208 0.0145833 15.8948 0 12.5 0Z"
-                      fill="white" />
-                    <path
-                      d="M12.5 6.08105C8.9552 6.08105 6.08124 8.95501 6.08124 12.4998C6.08124 16.0446 8.9552 18.9186 12.5 18.9186C16.0448 18.9186 18.9187 16.0446 18.9187 12.4998C18.9187 8.95501 16.0448 6.08105 12.5 6.08105ZM12.5 16.6665C10.1989 16.6665 8.33332 14.8008 8.33332 12.4998C8.33332 10.1988 10.1989 8.33314 12.5 8.33314C14.801 8.33314 16.6667 10.1988 16.6667 12.4998C16.6667 14.8008 14.801 16.6665 12.5 16.6665Z"
-                      fill="white" />
-                    <path
-                      d="M19.1729 7.32715C20.0013 7.32715 20.6729 6.65558 20.6729 5.82715C20.6729 4.99872 20.0013 4.32715 19.1729 4.32715C18.3445 4.32715 17.6729 4.99872 17.6729 5.82715C17.6729 6.65558 18.3445 7.32715 19.1729 7.32715Z"
-                      fill="white" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_275_45">
-                      <rect width="25" height="25" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg> <span> Instagram</span>
+                <i class="fa-brands fa-instagram"></i>
+                <span> Instagram</span>
               </p>
             </div>
-
           </div>
           <!-- Grid column -->
         </div>

@@ -19,7 +19,17 @@
     position: relative;
     text-align: center;
     margin-top: 70px;
-    margin-bottom: 70px;
+  }
+  p {
+    color: white;
+    z-index: 999999;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
   .map {
     z-index: 9;
@@ -43,31 +53,32 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .map-detail{
+  .map-detail {
     padding: 96px 32px 30px;
     z-index: 9;
     position: relative;
-    h5{
+    h5 {
       color: white;
       position: relative;
       font-size: 40px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      &::after{
+      &::after {
         content: "";
         height: 4px;
         width: 90px;
-        background-color: #EEB000;
+        background-color: #eeb000;
         position: absolute;
         left: 0;
         bottom: -5px;
       }
     }
   }
-  .contact-forms{
+  .contact-forms {
     margin-top: 40px;
-    input, textarea{
+    input,
+    textarea {
       width: 100%;
       outline: none;
       border: none;
@@ -77,11 +88,10 @@
       background: transparent;
       margin: 15px 0;
       resize: none;
-      &::placeholder{
+      &::placeholder {
         color: white;
       }
     }
-
   }
 
   .form-group {
@@ -107,136 +117,137 @@
   }
 
   .form-group label:before {
-    content:'';
+    content: "";
     -webkit-appearance: none;
     background-color: transparent;
-    border: 2px solid #EEB000;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #eeb000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
     padding: 10px;
     display: inline-block;
     position: relative;
     border-radius: 5px;
     width: 16px;
-height: 16px;
+    height: 16px;
     vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
   }
 
   .form-group input:checked + label:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 4px;
     left: 9px;
     width: 6px;
     height: 14px;
-    border: solid #EEB000;
+    border: solid #eeb000;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
-  .buttons{
+  .buttons {
     margin-top: 30px;
   }
-  .social-icon{
+  .social-icon {
     margin: 13px 0;
-    .icon-detail{
+    .icon-detail {
       color: #fff;
       font-size: 15px;
-      a{
+      a {
         color: #fff;
         text-decoration: none;
-        &:hover{
-          color: #EEB000 !important;
+        &:hover {
+          color: #eeb000 !important;
         }
       }
     }
   }
-.social-links{
-  a{
-    cursor: pointer;
-    margin: 0 13px;
-    margin-left: 0px;
-    transition: 0.4s;
-    &:hover svg path{
-      fill: #EEB000 !important;
+  .social-links {
+    a {
+      cursor: pointer;
+      margin: 0 13px;
+      margin-left: 0px;
+      transition: 0.4s;
+      &:hover svg path {
+        fill: #eeb000 !important;
+      }
     }
   }
 }
-}
 
 // Large devices (desktops, 992px and up)
-@media  (max-width: 1199.98px) {
-
+@media (max-width: 1199.98px) {
 }
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 991.98px) {
   .main-bg {
-    h2{
+    h2 {
       font-size: 3rem;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 40px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     .form-body {
       width: 100%;
-  }
-  .map-detail{
-    padding: 26px 18px 30px;
-    h5{
-      font-size: 2rem;
+    }
+    .map-detail {
+      padding: 26px 18px 30px;
+      h5 {
+        font-size: 2rem;
+      }
+    }
+    .contact-forms {
+      margin-top: 20px;
+    }
+    input,
+    textarea {
+      margin: 9px 0;
+    }
+    .form-group {
+      span {
+        font-size: 11px;
+      }
     }
   }
-  .contact-forms{
-    margin-top: 20px;
-  }
-input, textarea{
-  margin: 9px 0;
 }
-.form-group{
-  span{
-    font-size: 11px;
-  }
-}
-
-  }
-  }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .padding-auto-mobile{
+  .padding-auto-mobile {
     padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
   }
   .main-bg {
-    h2{
+    h2 {
       font-size: 3rem;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 40px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     .form-body {
       width: 100%;
-  }
-  .map-detail{
-    padding: 26px 18px 30px;
-    h5{
-      font-size: 2rem;
+    }
+    .map-detail {
+      padding: 26px 18px 30px;
+      h5 {
+        font-size: 2rem;
+      }
+    }
+    .contact-forms {
+      margin-top: 20px;
+    }
+    input,
+    textarea {
+      margin: 9px 0;
+    }
+    .form-group {
+      span {
+        font-size: 11px;
+      }
+    }
+    .map {
+      display: none;
     }
   }
-  .contact-forms{
-    margin-top: 20px;
-  }
-input, textarea{
-  margin: 9px 0;
 }
-.form-group{
-  span{
-    font-size: 11px;
-  }
-}
-.map{
-  display: none;
-}
-  }
- }
