@@ -12,14 +12,16 @@ import { StripeService } from 'src/core/services/stripe.service';
   styleUrls: ['./booking-detail.component.scss'],
 })
 export class BookingDetailComponent {
+  visible: boolean = false;
+  dialogType: string = '';
   booking: any;
   constructor(
     private dialogService: DialogService,
     private stripeService: StripeService
   ) {}
-  visible: boolean = false;
 
-  showDialog() {
+  showDialog(type: string): void {
+    this.dialogType = type;
     this.visible = true;
   }
 
