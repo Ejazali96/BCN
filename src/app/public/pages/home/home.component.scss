@@ -382,10 +382,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   //   }
 }
 
+::ng-deep {
+  .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    background-color: #ffe7ac;
+
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+  }
+  .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #edae27;
+  }
+  .p-carousel .p-carousel-content .p-carousel-prev,
+  .p-carousel .p-carousel-content .p-carousel-next {
+    display: none;
+  }
+}
+.testi-sec {
+  position: relative;
+}
+.title {
+  p {
+    color: black;
+    z-index: 999999;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+}
 .testimonial-card {
   border-radius: 54px;
   background: #fff6de;
-  padding: 55px 40px;
+  padding: 25px 20px;
   border: 3px dashed #000;
   text-align: center;
   position: relative;
@@ -402,12 +436,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   h4 {
     color: #000;
-    font-size: 25px;
+    font-size: 19px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     line-height: normal;
-    margin-top: 50px;
+    margin-top: 20px;
+    text-align: center;
   }
 
   h5 {
@@ -419,17 +454,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .user-body {
-  width: 165px;
+  width: 125px;
   background: #ffe9af;
   border-radius: 50%;
-  height: 165px;
+  height: 125px;
   padding: 25px;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 14rem;
-  margin-top: -20px;
+  margin: 0 auto;
 
   img {
     height: 100%;
@@ -815,7 +848,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 105px;
     height: 105px;
     right: 41%;
-    margin-top: -36px;
+    margin-top: 0;
     left: 34%;
   }
 
@@ -832,7 +865,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 20px 20px;
 
     h4 {
-      font-size: 23px;
+      font-size: 16px;
       font-weight: 600;
       margin-top: 30px;
     }

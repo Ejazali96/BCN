@@ -18,7 +18,8 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { BookingSuccessComponent } from './pages/booking-success/booking-success.component';
 import { DialogModule } from 'primeng/dialog';
 import { PrivacyComponent } from './shared/privacy/privacy.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'primeng/carousel';
+
 @NgModule({
   declarations: [
     LayoutComponent,

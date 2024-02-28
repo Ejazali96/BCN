@@ -524,78 +524,33 @@
   </div>
 </section>
 <!-- testimonial section -->
-<section class="testi-sec">
+<section class="testi-sec pb-5">
   <div class="inner-container">
     <div class="title mb-5 mt-5">
       <h3>Testimonials</h3>
+      <p>
+        Read what our satisfied customers have to say about their experiences
+        with Terminal Transit. From last-minute bookings to regular commutes,
+        our clients trust us for reliable, luxurious, and efficient airport
+        transfers.
+      </p>
     </div>
-
-    <!-- <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide>
+    <p-carousel
+      [value]="testimonial"
+      [numVisible]="3"
+      [responsiveOptions]="responsiveOptions"
+      [autoplayInterval]="3000"
+    >
+      <ng-template let-testimonial pTemplate="item">
         <div class="testimonial-card">
-          <p>
-            I recently had the pleasure of using BCN, and I must say, it
-            exceeded my expectations in every way. As someone who frequently
-            requires local and out-of-city car rentals, I've encountered my fair
-            share of booking platforms, but this one stands out for several
-            reasons.
-          </p>
-          <h4>JOHN DOE</h4>
-          <h5>15/05/2023</h5>
           <div class="user-body">
             <img src="../../assets/images/user-1.png" alt="user" />
           </div>
+          <h4>{{ testimonial.description }}</h4>
+          <h4>{{ testimonial.name }}</h4>
+          <h6>{{ testimonial.price }}</h6>
         </div>
       </ng-template>
-      <ng-template carouselSlide>
-        <div class="testimonial-card">
-          <p>
-            I recently had the pleasure of using BCN, and I must say, it
-            exceeded my expectations in every way. As someone who frequently
-            requires local and out-of-city car rentals, I've encountered my fair
-            share of booking platforms, but this one stands out for several
-            reasons.
-          </p>
-          <h4>JOHN DOE</h4>
-          <h5>15/05/2023</h5>
-          <div class="user-body">
-            <img src="../../assets/images/user-1.png" alt="user" />
-          </div>
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="testimonial-card">
-          <p>
-            I recently had the pleasure of using BCN, and I must say, it
-            exceeded my expectations in every way. As someone who frequently
-            requires local and out-of-city car rentals, I've encountered my fair
-            share of booking platforms, but this one stands out for several
-            reasons.
-          </p>
-          <h4>JOHN DOE</h4>
-          <h5>15/05/2023</h5>
-          <div class="user-body">
-            <img src="../../assets/images/user-1.png" alt="user" />
-          </div>
-        </div>
-      </ng-template>
-
-      <ng-template carouselSlide>
-        <div class="testimonial-card">
-          <p>
-            I recently had the pleasure of using BCN, and I must say, it
-            exceeded my expectations in every way. As someone who frequently
-            requires local and out-of-city car rentals, I've encountered my fair
-            share of booking platforms, but this one stands out for several
-            reasons.
-          </p>
-          <h4>JOHN DOE</h4>
-          <h5>15/05/2023</h5>
-          <div class="user-body">
-            <img src="../../assets/images/user-1.png" alt="user" />
-          </div>
-        </div>
-      </ng-template>
-    </owl-carousel-o> -->
+    </p-carousel>
   </div>
 </section>
