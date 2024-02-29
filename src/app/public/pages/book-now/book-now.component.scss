@@ -7,6 +7,15 @@
   position: relative;
   padding: 50px 20px;
 }
+.disable-border{
+  border: 1px solid #6B6B6B;
+  p{
+    color: #6B6B6B !important;
+  }
+  input{
+    color: #6B6B6B !important;
+  }
+}
 ::ng-deep {
   .p-inputtext:enabled:focus {
     box-shadow: none;
@@ -19,13 +28,13 @@
 .location_ {
   width: 100%;
 }
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -33,8 +42,8 @@
   display: inline-block;
   color: #ffff;
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -42,11 +51,11 @@
   width: 18px;
   height: 18px;
   border: 1px solid #ddd;
-  border-radius: 100%;
+  border-radius: 4px;
   background: #fff;
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
   content: "";
   width: 12px;
   height: 12px;
@@ -54,16 +63,16 @@
   position: absolute;
   top: 3px;
   left: 3px;
-  border-radius: 100%;
+  border-radius: 1px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
+[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-[type="radio"]:checked + label:after {
+[type="checkbox"]:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);

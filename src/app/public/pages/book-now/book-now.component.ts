@@ -32,7 +32,7 @@ export class BookNowComponent {
     private toastr: ToastrService,
     private fb: FormBuilder,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.form = this.fb.group({
@@ -48,6 +48,7 @@ export class BookNowComponent {
       price: [0.0],
       distance: [''],
       duration: [''],
+      isReturn: [false],
       pickup: this.fb.group({
         autocomplete: [''],
         placeId: [''],
@@ -184,7 +185,7 @@ export class BookNowComponent {
       var hours =
         Math.abs(
           (new Date(this.form.value.start) as any) -
-            (new Date(this.form.value.end) as any)
+          (new Date(this.form.value.end) as any)
         ) / 36e5;
       price = vehicleType.perHourBarca * hours;
 
@@ -206,8 +207,8 @@ export class BookNowComponent {
     this.CalculatePrice();
   }
 
-  IsDropOffChange() {
-    debugger;
+  IsDropOffChange(value: string) {
+    this.form.controls['isDropOff'].setValue(value)
     if (this.form.controls['isDropOff'].value == 'true') {
       (this.form.controls['dropOff'] as FormGroup).controls[
         'placeName'
@@ -224,4 +225,6 @@ export class BookNowComponent {
     ].updateValueAndValidity();
     this.form.controls['end'].updateValueAndValidity();
   }
+
+
 }
