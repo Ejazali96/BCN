@@ -15,7 +15,7 @@ export class BookingDetailComponent {
   visible: boolean = false;
   dialogType: string = '';
   booking: any;
-  termsconditions: boolean = false
+  termsconditions: boolean = false;
 
   constructor(
     private dialogService: DialogService,
@@ -34,14 +34,14 @@ export class BookingDetailComponent {
 
   ConfirmBooking() {
     if (!this.termsconditions) {
-      this.toastr.warning('Please check Terms & Conditions')
-      return
+      this.toastr.warning('Please check Terms & Conditions');
+      return;
     }
     this.dialogService
       .open(ConfirmBookingComponent, {
         header: 'Confirm Booking',
-        width: '30vw',
-        height: '50vh',
+        // width: '100%',
+        // height: '50vh',
         modal: true,
       })
       .onClose.subscribe((res: any) => {

@@ -28,3 +28,39 @@
     padding: 10px 15px;
   }
 }
+
+@media (max-width: 575.98px) {
+  ::ng-deep {
+    .p-dialog {
+      width: 95% !important;
+    }
+  }
+  .input-groups {
+    input {
+      width: 100%;
+      margin: 5px 0;
+      height: 50px;
+      padding: 10px 15px;
+      border: 1px solid black;
+    }
+  }
+  ::ng-deep {
+    .p-inputmask {
+      width: 100%;
+      margin: 5px 0;
+      height: 50px;
+      border: 1px solid black;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #000;
+    }
+  }
+  .search button {
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+  }
+  .modal-footer {
+    display: inline;
+  }
+}

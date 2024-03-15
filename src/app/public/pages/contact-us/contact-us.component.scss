@@ -189,6 +189,10 @@
       margin-top: 40px;
       margin-bottom: 40px;
     }
+    p {
+      margin-bottom: 1rem;
+      font-size: 15px;
+    }
     .form-body {
       width: 100%;
     }
@@ -220,10 +224,14 @@
   }
   .main-bg {
     h2 {
-      font-size: 3rem;
+      font-size: 2.4rem;
       font-weight: 600;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 15px;
     }
     .form-body {
       width: 100%;

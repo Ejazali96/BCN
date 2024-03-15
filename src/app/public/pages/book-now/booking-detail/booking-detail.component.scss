@@ -290,12 +290,19 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .marging-to-100 {
+    margin-top: 20px;
+  }
   .custom-dialouge {
     .modal-content {
       min-width: 100%;
     }
   }
-
+  ::ng-deep {
+    .p-dialog {
+      width: 95% !important;
+    }
+  }
   .image-body {
     width: auto;
     height: auto;
@@ -333,7 +340,7 @@
     }
 
     input {
-      width: 90%;
+      width: 100%;
     }
 
     .search {

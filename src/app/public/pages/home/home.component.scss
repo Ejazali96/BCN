@@ -642,7 +642,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .title {
-    margin: 0px 0 20px;
+    margin: 0px 0 20px !important;
 
     h3 {
       font-size: 3rem;
@@ -724,6 +724,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .form-detail {
+    h2 {
+      font-size: 23px;
+      line-height: 1.1;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
   // .main_form {
   //   height: 100%;
   // }
@@ -800,11 +809,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .title {
-    margin: 0px 0 20px;
+    margin: 0px 0 20px !important;
 
     h3 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
+    p {
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+  .container-fluid.advertisers-service-sec.pt-5.pb-5 {
+    padding-top: 0px !important;
   }
 
   .vehicle-image {
