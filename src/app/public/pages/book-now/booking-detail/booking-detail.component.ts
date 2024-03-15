@@ -15,9 +15,12 @@ export class BookingDetailComponent {
   visible: boolean = false;
   dialogType: string = '';
   booking: any;
+  termsconditions: boolean = false
+
   constructor(
     private dialogService: DialogService,
-    private stripeService: StripeService
+    private stripeService: StripeService,
+    private toastr: ToastrService
   ) {}
 
   showDialog(type: string): void {
@@ -30,6 +33,10 @@ export class BookingDetailComponent {
   }
 
   ConfirmBooking() {
+    if (!this.termsconditions) {
+      this.toastr.warning('Please check Terms & Conditions')
+      return
+    }
     this.dialogService
       .open(ConfirmBookingComponent, {
         header: 'Confirm Booking',
