@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-4 p-0 width-45">
+    <div class="login_secreen">
+
+
+      <div class="main-arete-login pt-5">
+        <div class="arete-logo custom-container container-fluid pt-4">
+         <img src="../../../assets/images/footer-logo.png" alt="">
+        </div>
+        <div class="authentication-page-content">
+
+          <div class="">
+
+            <div class="text-center">
+              <h1>Login</h1>
+            </div>
+
+            <div class="p-2 mt-3">
+              <form [formGroup]="form" class="form-horizontal mb-3" (submit)="FormSubmit()">
+                <div class="form-group auth-form-group-custom mb-3">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Email" formControlName="userName">
+                </div>
+                <div class="form-group auth-form-group-custom mb-5">
+                  <label for="password">Password</label>
+                  <p-password formControlName="password" [feedback]="false" [toggleMask]="true" [placeholder]="'Password'"></p-password>
+                  <!-- <input type="password" id="password" placeholder="Password" formControlName="password"/> -->
+                </div>
+                <div class="buttons">
+                  <button type="submit" class="cta-01"><span class="icon d-flex">Log In</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8 p-0 width-50">
+    <div class="side-image-bg">
+      <div class="opacity-bg"></div>
+      <div class="title">
+        <h2>Terminal Transits</h2>
+        <!-- <h2> BCN</h2> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

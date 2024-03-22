@@ -1,0 +1,244 @@
+::ng-deep {
+  .p-password-input {
+    width: 100% !important;
+    border: none;
+  }
+  .p-password {
+    display: block;
+    width: 100%;
+  }
+}
+
+.bharti_logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.row{
+  margin: 0;
+}
+.arete-logo{
+  text-align: center;
+  img{
+    height: 13rem;
+    // width: 13rem;
+  }
+}
+.login_secreen {
+  // background-color: #242323;
+  height: 100vh;
+  background: #010101;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.authentication-page-content{
+  margin-top: 30px;
+  padding: 25px;
+  background: #EEB000;
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(58, 58, 58, 0.3);
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 2rem;
+}
+.main-arete-login {
+  width: 100%;
+
+
+}
+.main-arete-login h1 {
+  font-family: var(--custom-font-cairo);
+  font-weight: 800;
+  font-size: 3.6rem;
+  color: black;
+  margin: 0;
+}
+.main-arete-login h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+.form-group label {
+  font-size: 18px;
+  padding: 0 5px;
+}
+.form-group input {
+  outline: none;
+  height: 50px;
+  outline: none;
+  width: 100%;
+  border: 0;
+  padding: 0 9px;
+  border-radius: 5px;
+  font-family: var(--custom-font-cairo);
+}
+.form-group input::placeholder{
+  color: #242323;
+}
+.form-group input:focus {
+  box-shadow: none;
+  border: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: black !important;}
+
+.side-image-bg{
+  background-image: url(../../../assets/images/contact-us.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  h2{
+
+    color: #EEB000;
+    z-index: 99999;
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+}
+
+.opacity-bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: #1a1c04bd;
+}
+.buttons button{
+  padding: 0 17px;
+  border-radius: 10px;
+  min-width: 100%;
+  background: #EEB000;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+.buttons button:hover.cta-01 i {
+  color: white;
+  transition: all 0.6s ease;
+  z-index: 9;
+}
+.buttons button:after, .buttons button:before {
+  width: 0%;
+  height: 0%;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+}
+.buttons button:after {
+  transition: all 0.5s ease;
+  background: white;
+  color: white;
+}
+.buttons button:before {
+  transition: all 0.5s ease-out;
+  background: white;;
+
+}
+.buttons button span {
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+.buttons button.cta-01 {
+  color: white;
+  background: black;
+  font-size: 18px;
+}
+.buttons button:hover.cta-01 {
+  color:white;
+}
+
+.buttons button:hover:after, .buttons button:hover:before {
+  width:100%;
+  background: #191909;
+  height: 100%;
+  border-radius: 4px;
+}
+.buttons button:hover:after {
+  transition: all 0.7s ease-in;
+}
+.buttons button:hover:before {
+  transition: all 0.5s ease-in;
+}
+
+    // Large devices (desktops, 992px and up)
+@media  (max-width: 1199.98px) {
+  .bg {
+    width: 60%;
+    border-radius: 8px;
+}
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991.98px) {
+  .bg {
+    width: 90%;
+    border-radius: 8px;
+}
+ }
+// Medium devices (tablets, 768px and up)
+@media (max-width: 991.98px) {
+  .width-50{
+    width: 55%;
+  }
+  .width-45{
+    width: 45%;
+  }
+ }
+// Small devices (landscape phones, 576px and up)
+@media  (max-width: 767.98px) {  }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .width-50{
+    width: 100%;
+  }
+  .width-45{
+    width: 100%;
+  }
+.side-image-bg{
+  display: none;
+}
+.main-arete-login h1 {
+  font-size: 2.2rem;
+}
+.main-arete-login h4{
+  font-size: 16px;
+  margin: 5px 0;
+}
+.fix-width-btn {
+  width: 100%;
+  height: 1.9em;
+}
+.bharti_logo{
+  justify-content: center;
+}
+.form-group input {
+  height: 44px;
+}
+ }

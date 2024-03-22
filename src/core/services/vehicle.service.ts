@@ -9,6 +9,14 @@ export class VehicleService {
 
   constructor(private http: HttpClient) { }
 
+  Save(body: any) {
+    return this.http.post(`Vehicle/Save`, body)
+  }
+
+  Get(id: number) {
+    return this.http.get(`Vehicle/Get?id=${id}`)
+  }
+
   GetAll(model: PaginationConfig) {
     return this.http.get(`Vehicle/GetAll?page=${model.page}&size=${model.size}&search=${model.search}`)
   }

@@ -1,0 +1,60 @@
+<div class="row main-row">
+  <div class="col-md-2 tablet-width fixed-height">
+    <!-- for mobile responsiveness sidebar -->
+    <nav role="navigation" class="side-navigation">
+      <div id="clickNav">
+        <input type="checkbox" />
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+        <ul class="nav-data sidebar" role="list">
+          <div class="">
+            <div class="sidebar-menu">
+              <div class="top-menu">
+                <div class="mt-2 logo-width">
+                  <img src="../../../assets/images/footer-logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="menu-height mt-4">
+                  <a routerLink="/admin/bookings" class="sidebar-link mt-4" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+                    <span>Bookings</span>
+                  </a>
+                  <a routerLink="/admin/vehicles/save" class="sidebar-link mt-4" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+                    <span>Vehicles</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+  </div>
+
+
+  <div class="col-md-10 tablet-width-100 fixed-height p-4">
+    <div class="header mb-3 shadow-lg">
+      <div class="">
+        <h3 class="text-capitalize">{{ path }}</h3>
+      </div>
+
+      <div class="dropdown">
+        <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="user-img">
+            <div class="border">
+              <img [src]="user.photo" onerror="this.src = '../../../assets/images/user-1.png'" alt="user-mage">
+            </div>
+
+            <p>{{ user.firstName + ' ' + user.lastName }}</p>
+          </div>
+        </button>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item p-2" (click)="Logout()">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

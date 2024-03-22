@@ -1,0 +1,37 @@
+.detail-icon-delete {
+  i {
+    color: #e64349;
+
+    &:hover {
+      color: #c45d60;
+    }
+  }
+}
+
+.table-heading {
+  ::ng-deep {
+    .p-datatable .p-datatable-thead > tr > th {
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  ::ng-deep {
+    .p-datatable .p-datatable-tbody > tr > td {
+      font-family: "Montserrat", sans-serif !important;
+    }
+  }
+}
+
+// Media quries for mobile responsiveness
+@media (max-width: 575.98px) {
+  .search-field {
+    width: 100% !important;
+    input {
+      width: 100% !important;
+    }
+  }
+  .admin-btn {
+    width: 100% !important;
+    margin-top: 0.4rem;
+  }
+}

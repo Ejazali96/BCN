@@ -1,0 +1,34 @@
+<form [formGroup]="form" class="col-md-6" (submit)="Submit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label>Seats</label>
+    <input type="number" class="form-control" formControlName="seats">
+  </div>
+  <div class="form-group">
+    <label>Bags</label>
+    <input type="number" class="form-control" formControlName="bags">
+  </div>
+  <div class="form-group">
+    <label>Image</label>
+    <input type="file" class="form-control" (change)="Upload($event)">
+    <div class="d-flex mt-2" *ngIf="form.value.image">
+      <div class="w-25 mx-1 img-container">
+        <img [src]="form.value.image" alt="" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="w-100">Transmission</label>
+    <p-dropdown formControlName="transmission" [options]="transmissions"></p-dropdown>
+  </div>
+  <div class="form-group">
+    <label class="w-100">Type</label>
+    <p-dropdown formControlName="typeId" optionValue="id" optionLabel="name" [options]="types"></p-dropdown>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-dark">Save</button>
+  </div>
+</form>

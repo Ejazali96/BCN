@@ -1,0 +1,12 @@
+.form-group {
+  margin: 1rem 0;
+  .form-control {
+    padding: 0.75rem;
+  }
+}
+
+::ng-deep {
+  .p-dropdown {
+    width: 100% !important;
+  }
+}

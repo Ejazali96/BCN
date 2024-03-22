@@ -23,12 +23,12 @@ export class AppInterceptor implements HttpInterceptor {
       this.ngxService.start()
     }
 
-    var token = sessionStorage['token']
+    var token = localStorage['token']
 
     // if (token) {
     //   let decodedTokenData = JSON.parse(window.atob(token.split('.')[1]))
     //   if (!(decodedTokenData.exp > Math.floor(new Date().getTime() / 1000))) {
-    //     sessionStorage['token'] = ''
+    //     localStorage['token'] = ''
     //     this.router.navigate(['auth/login'])
     //     this.ngxService.stop()
     //     return NEVER;
