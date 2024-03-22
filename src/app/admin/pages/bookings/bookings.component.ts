@@ -40,6 +40,7 @@ export class BookingsComponent {
         console.log(this.data)
       });
       this.cols = [
+        { field: "number", header: "Number" },
         { field: "name", header: "Name" },
         { field: "contactNumber", header: "Contact" },
         { field: "email", header: "Email" },

@@ -12,11 +12,11 @@
           <!-- <p *ngIf="booking.isDropOff">
             €{{ booking.vehicleType.perKm }}/km
             <span> (EN BARCELONA CITY)</span>
-          </p>
+          </p> -->
           <p *ngIf="!booking.isDropOff">
             €{{ booking.vehicleType.perHourBarca }}/Hour
             <span> (EN BARCELONA CITY)</span>
-          </p> -->
+          </p>
           <div class="image-body">
             <img [src]="booking.vehicleType.image" onerror="this.src = '../../assets/images/van-detail.png'" alt=""
               class="img-fluid" />

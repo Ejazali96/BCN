@@ -1,9 +1,9 @@
 <div class="bokking-detail-mian">
   <div class="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.7256070117933!2d1.9748103765459615!3d41.46686629106077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a48e32609d0391%3A0xe7a73bbb57af19ae!2sAS%20HOTEL%20Porta%20Barcelona!5e0!3m2!1sen!2s!4v1711100681745!5m2!1sen!2s"
-      style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <google-map height="100%" width="100%" [zoom]="zoom" [center]="center" [options]="options">
+      <map-marker *ngFor="let marker of markers" [position]="marker.position" [title]="marker.title" [options]="marker.options" (mapClick)="MarkerClick(marker)" >
+  </map-marker>
+    </google-map>
   </div>
 
   <div class="booking-title">
@@ -13,51 +13,49 @@
     <div class="col-md-4">
       <div class="booking-info">
         <h6>Name:</h6>
-        <p>Abdussami Tariq</p>
+        <p>{{ data.name }}</p>
       </div>
       <div class="booking-info mt-3">
         <h6>Start:</h6>
-        <p>March 15, 2024 <span> 05:01 PM</span></p>
+        <p>{{ data.end | date : "MMM dd, yyyy h:mm a" }}</p>
       </div>
 
       <div class="booking-info mt-3">
         <h6>Pickup:</h6>
-        <p>08820 El Prat de Llobregat,
-          Barcelona, Spain</p>
+        <p>{{ data.pickup }}</p>
       </div>
       <div class="booking-info mt-3">
         <h6>Booking Type:</h6>
-        <p>Fixed</p>
+        <p>{{ data.isDropOff ? 'Fixed' : 'Rental' }}</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="booking-info">
         <h6>Contact:</h6>
-        <p>+34 031 000 521</p>
+        <p>{{ data.contactNumber }}</p>
       </div>
       <div class="booking-info mt-3">
         <h6>End:</h6>
-        <p>March 15, 2024<span> 05:01 AM</span></p>
+        <p>{{ data.end | date : "MMM dd, yyyy h:mm a" }}</p>
       </div>
 
       <div class="booking-info mt-3">
         <h6>Drop-off:</h6>
-        <p>Plaça de Catalunya, L'Eixample, 08002
-          Barcelona, Spain</p>
+        <p>{{ data.dropOff ?? '-' }}</p>
       </div>
       <div class="booking-info mt-3">
         <h6>Price</h6>
-        <p>€ 210</p>
+        <p>€ {{ data.price | number : "0.2-2" }}</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="booking-info">
         <h6>Email:</h6>
-        <p>abdussamitariq60@gmail.com</p>
+        <p>{{ data.email }}</p>
       </div>
       <div class="booking-info mt-9">
         <h6>Vehicle Type:</h6>
-        <p>Sedan</p>
+        <p>{{ data.vehicleType.name }}</p>
       </div>
     </div>
   </div>

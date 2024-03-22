@@ -12,7 +12,7 @@ import { SaveVehiclesComponent } from './pages/vehicles/save-vehicles/save-vehic
 import { DropdownModule } from 'primeng/dropdown';
 import { BookingDetailModelComponent } from './pages/bookings/booking-detail-model/booking-detail-model.component';
 import { DialogService } from 'primeng/dynamicdialog';
-
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { DialogService } from 'primeng/dynamicdialog';
     ReactiveFormsModule,
     TableModule,
     DropdownModule,
+    GoogleMapsModule,
   ],
   providers: [
     DialogService

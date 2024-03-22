@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { PaginationConfig } from 'src/core/models/pagination-config.model';
 import { VehicleService } from 'src/core/services/vehicle.service';
 
@@ -15,6 +17,8 @@ export class VehiclesComponent {
 
   constructor(
     private service: VehicleService,
+    private toastr: ToastrService,
+    private router: Router
     ) {
 
   }
@@ -45,24 +49,16 @@ export class VehiclesComponent {
   }
 
   Edit(id: string) {
-    // this.router.navigate(['/admin/business/save'], { queryParams: { id: id } })
+    this.router.navigate(['/admin/vehicles/save'], { queryParams: { id: id } })
   }
 
-  Delete(id: string) {
-    // this.confirmation.confirm({
-    //   message: 'Do you want to delete this user?',
-    //   header: 'Delete Confirmation',
-    //   accept: () => {
-    //     this.service.Delete(id).subscribe((res: any) => {
-    //       if (res.isSuccess) {
-    //         this.toastr.success('User Deleted')
-    //         this.LoadGridList()
-    //       }
-    //     })
-    //   },
-    //   reject: () => {
-    //   }
-    // });
+  Delete(id: number) {
+    this.service.Delete(id).subscribe((res: any) => {
+      if (res.isSuccess) {
+        this.toastr.success('Vehicle Deleted')
+        this.LoadGridList()
+      }
+    })
   }
 
   Filter() {

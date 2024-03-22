@@ -47,18 +47,22 @@ export class SaveVehiclesComponent {
     this.service.GetAllTypes().subscribe((res: any) => {
       this.types = res.payload
     })
+
+    if (this.id) {
+      this.Get()
+    }
   }
 
   Get() {
     this.service.Get(this.id).subscribe((res: any) => {
       this.form = this.fb.group({
         id: [res.payload.id],
-        postImages: [res.payload.images],
-        tags: [res.payload.tags.map((x: any) => x.id)],
-        items: [res.payload.items],
-        productUrl: [res.payload.productUrl],
-        isPublic: [res.payload.isPublic],
-        isActive: [true]
+        name: [res.payload.name, [Validators.required]],
+        image: [res.payload.image, [Validators.required]],
+        seats: [res.payload.seats, [Validators.required]],
+        bags: [res.payload.bags, [Validators.required]],
+        typeId: [res.payload.typeId, [Validators.required]],
+        transmission: [res.payload.transmission, [Validators.required]],
       })
       console.log(this.form.value)
     })

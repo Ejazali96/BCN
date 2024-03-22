@@ -24,4 +24,8 @@ export class VehicleService {
   GetAllTypes() {
     return this.http.get(`Vehicle/GetAllTypes`)
   }
+
+  Delete(id: number) {
+    return this.http.delete(`Vehicle/Delete?id=${id}`)
+  }
 }

@@ -155,10 +155,10 @@
               </div>
             </div>
           </div>
-          <p class="pt-3">
+          <!-- <p class="pt-3">
             <input type="checkbox" id="test1" formControlName="isReturn" />
             <label for="test1">Return</label>
-          </p>
+          </p> -->
           <div class="col-md-6" *ngIf="form.value.isReturn">
             <div class="destination margin-top ">
               <p>Return Date</p>
@@ -194,7 +194,7 @@
               <img [src]="vehicle.image" alt="van" />
             </div>
             <div class="car-detail">
-              <h5>{{ vehicle.name + " " + vehicle.type.name }}</h5>
+              <h5>{{ vehicle.name }}</h5>
               <div class="d-flex svg-icon align-items-center">
                 <div class="icon">
                   <svg
