@@ -8,6 +8,10 @@
   }
 }
 
+.form-control {
+  padding: 0.75rem;
+}
+
 .table-heading {
   ::ng-deep {
     .p-datatable .p-datatable-thead > tr > th {
