@@ -21,7 +21,16 @@
     }
   }
 }
-
+.actions-btn {
+  i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      color: #edae27;
+    }
+  }
+}
 // Media quries for mobile responsiveness
 @media (max-width: 575.98px) {
   .search-field {
